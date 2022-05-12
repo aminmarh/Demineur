@@ -37,48 +37,43 @@ Partial Class Form1
         Me.ComboBoxNomJoueur.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append
         Me.ComboBoxNomJoueur.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
         Me.ComboBoxNomJoueur.FormattingEnabled = True
-        Me.ComboBoxNomJoueur.Location = New System.Drawing.Point(194, 125)
-        Me.ComboBoxNomJoueur.Margin = New System.Windows.Forms.Padding(2)
+        Me.ComboBoxNomJoueur.Location = New System.Drawing.Point(291, 192)
         Me.ComboBoxNomJoueur.Name = "ComboBoxNomJoueur"
-        Me.ComboBoxNomJoueur.Size = New System.Drawing.Size(312, 21)
+        Me.ComboBoxNomJoueur.Size = New System.Drawing.Size(466, 28)
         Me.ComboBoxNomJoueur.TabIndex = 0
         '
         'LabelNomJoueur
         '
         Me.LabelNomJoueur.AutoSize = True
-        Me.LabelNomJoueur.Location = New System.Drawing.Point(56, 133)
-        Me.LabelNomJoueur.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.LabelNomJoueur.Location = New System.Drawing.Point(84, 205)
         Me.LabelNomJoueur.Name = "LabelNomJoueur"
-        Me.LabelNomJoueur.Size = New System.Drawing.Size(79, 13)
+        Me.LabelNomJoueur.Size = New System.Drawing.Size(117, 20)
         Me.LabelNomJoueur.TabIndex = 1
         Me.LabelNomJoueur.Text = "Nom du Joueur"
         '
         'ButtonQuitter
         '
-        Me.ButtonQuitter.Location = New System.Drawing.Point(11, 241)
-        Me.ButtonQuitter.Margin = New System.Windows.Forms.Padding(2)
+        Me.ButtonQuitter.Location = New System.Drawing.Point(16, 371)
         Me.ButtonQuitter.Name = "ButtonQuitter"
-        Me.ButtonQuitter.Size = New System.Drawing.Size(108, 31)
+        Me.ButtonQuitter.Size = New System.Drawing.Size(162, 48)
         Me.ButtonQuitter.TabIndex = 2
         Me.ButtonQuitter.Text = "Quitter"
         Me.ButtonQuitter.UseVisualStyleBackColor = True
         '
         'ButtonScore
         '
-        Me.ButtonScore.Location = New System.Drawing.Point(214, 241)
-        Me.ButtonScore.Margin = New System.Windows.Forms.Padding(2)
+        Me.ButtonScore.Location = New System.Drawing.Point(321, 371)
         Me.ButtonScore.Name = "ButtonScore"
-        Me.ButtonScore.Size = New System.Drawing.Size(108, 31)
+        Me.ButtonScore.Size = New System.Drawing.Size(162, 48)
         Me.ButtonScore.TabIndex = 3
         Me.ButtonScore.Text = "Score"
         Me.ButtonScore.UseVisualStyleBackColor = True
         '
         'ButtonNvPartie
         '
-        Me.ButtonNvPartie.Location = New System.Drawing.Point(414, 241)
-        Me.ButtonNvPartie.Margin = New System.Windows.Forms.Padding(2)
+        Me.ButtonNvPartie.Location = New System.Drawing.Point(621, 371)
         Me.ButtonNvPartie.Name = "ButtonNvPartie"
-        Me.ButtonNvPartie.Size = New System.Drawing.Size(108, 31)
+        Me.ButtonNvPartie.Size = New System.Drawing.Size(162, 48)
         Me.ButtonNvPartie.TabIndex = 4
         Me.ButtonNvPartie.Text = "Nouvelle Partie"
         Me.ButtonNvPartie.UseVisualStyleBackColor = True
@@ -87,26 +82,28 @@ Partial Class Form1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(174, 33)
+        Me.Label1.Location = New System.Drawing.Point(45, 58)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(176, 39)
+        Me.Label1.Size = New System.Drawing.Size(262, 61)
         Me.Label1.TabIndex = 5
         Me.Label1.Text = "Démineur"
         '
         'ButtonOption
         '
-        Me.ButtonOption.Location = New System.Drawing.Point(447, 12)
+        Me.ButtonOption.Location = New System.Drawing.Point(670, 18)
+        Me.ButtonOption.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.ButtonOption.Name = "ButtonOption"
-        Me.ButtonOption.Size = New System.Drawing.Size(75, 23)
+        Me.ButtonOption.Size = New System.Drawing.Size(112, 35)
         Me.ButtonOption.TabIndex = 6
         Me.ButtonOption.Text = "Option"
         Me.ButtonOption.UseVisualStyleBackColor = True
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(533, 292)
+        Me.ClientSize = New System.Drawing.Size(800, 449)
         Me.Controls.Add(Me.ButtonOption)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ButtonNvPartie)
@@ -114,7 +111,6 @@ Partial Class Form1
         Me.Controls.Add(Me.ButtonQuitter)
         Me.Controls.Add(Me.LabelNomJoueur)
         Me.Controls.Add(Me.ComboBoxNomJoueur)
-        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Form1"
         Me.Text = "Acceuil"
         Me.ResumeLayout(False)
