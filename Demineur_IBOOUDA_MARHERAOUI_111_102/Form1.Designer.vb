@@ -37,7 +37,7 @@ Partial Class Form1
         Me.ComboBoxNomJoueur.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append
         Me.ComboBoxNomJoueur.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
         Me.ComboBoxNomJoueur.FormattingEnabled = True
-        Me.ComboBoxNomJoueur.Location = New System.Drawing.Point(103, 122)
+        Me.ComboBoxNomJoueur.Location = New System.Drawing.Point(194, 125)
         Me.ComboBoxNomJoueur.Margin = New System.Windows.Forms.Padding(2)
         Me.ComboBoxNomJoueur.Name = "ComboBoxNomJoueur"
         Me.ComboBoxNomJoueur.Size = New System.Drawing.Size(312, 21)
@@ -46,7 +46,7 @@ Partial Class Form1
         'LabelNomJoueur
         '
         Me.LabelNomJoueur.AutoSize = True
-        Me.LabelNomJoueur.Location = New System.Drawing.Point(8, 125)
+        Me.LabelNomJoueur.Location = New System.Drawing.Point(56, 133)
         Me.LabelNomJoueur.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.LabelNomJoueur.Name = "LabelNomJoueur"
         Me.LabelNomJoueur.Size = New System.Drawing.Size(79, 13)
@@ -87,7 +87,7 @@ Partial Class Form1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(24, 22)
+        Me.Label1.Location = New System.Drawing.Point(174, 33)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(176, 39)
         Me.Label1.TabIndex = 5
@@ -95,7 +95,7 @@ Partial Class Form1
         '
         'ButtonOption
         '
-        Me.ButtonOption.Location = New System.Drawing.Point(434, 120)
+        Me.ButtonOption.Location = New System.Drawing.Point(447, 12)
         Me.ButtonOption.Name = "ButtonOption"
         Me.ButtonOption.Size = New System.Drawing.Size(75, 23)
         Me.ButtonOption.TabIndex = 6
