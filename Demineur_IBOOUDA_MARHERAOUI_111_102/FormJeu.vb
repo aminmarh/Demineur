@@ -34,4 +34,14 @@
             Form1.Show()
         End If
     End Sub
+
+    Private Sub FormJeu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim PanelJeu = New TableLayoutPanel
+        For i As Integer = 0 To 7
+            For j As Integer = 0 To 8
+                PanelJeu.Controls.Add(New Button, i, j)
+            Next
+        Next
+
+    End Sub
 End Class
