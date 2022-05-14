@@ -1,4 +1,5 @@
 ﻿Public Class FormOption
+    Dim tabtaille As Integer() = {2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20}
     Private Sub ButtonQuitter_Click(sender As Object, e As EventArgs) Handles ButtonQuitter.Click
         Dim Msg, Style, Title, Response
         Msg = "Etes-vous sûr de vouloir quitter ?"
@@ -18,11 +19,11 @@
         Title = "Attention"
         Response = MsgBox(Msg, Style, Title)
         If Response = vbYes Then
+            If RadioButtonPersonnalisé.Checked Then
+                FormJeu.Placer_boutons(ComboBoxTailleTab.SelectedItem)
+            End If
             Close()
             Form1.Show()
-        End If
-        If (RadioButtonPersonnalisé.Checked = True) Then
-            FormJeu.Placer_boutons(TextBoxTailleTab.Text)
         End If
     End Sub
 
@@ -43,5 +44,11 @@
 
     Private Sub RadioButtonDifficile_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButtonDifficile.CheckedChanged
         FormJeu.Placer_boutons(16)
+    End Sub
+
+    Private Sub FormOption_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        For i As Integer = 0 To tabtaille.Length - 1
+            ComboBoxTailleTab.Items.Add(tabtaille(i))
+        Next
     End Sub
 End Class

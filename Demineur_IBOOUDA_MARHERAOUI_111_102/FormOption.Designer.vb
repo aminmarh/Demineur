@@ -37,8 +37,8 @@ Partial Class FormOption
         Me.ButtonSauvegarder = New System.Windows.Forms.Button()
         Me.ButtonQuitter = New System.Windows.Forms.Button()
         Me.LabelTailleTab = New System.Windows.Forms.Label()
-        Me.TextBoxTailleTab = New System.Windows.Forms.TextBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.ComboBoxTailleTab = New System.Windows.Forms.ComboBox()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -72,7 +72,6 @@ Partial Class FormOption
         Me.RadioButtonFacile.Name = "RadioButtonFacile"
         Me.RadioButtonFacile.Size = New System.Drawing.Size(76, 24)
         Me.RadioButtonFacile.TabIndex = 2
-        Me.RadioButtonFacile.TabStop = True
         Me.RadioButtonFacile.Text = "Facile"
         Me.RadioButtonFacile.UseVisualStyleBackColor = True
         '
@@ -84,7 +83,6 @@ Partial Class FormOption
         Me.RadioMoyen.Name = "RadioMoyen"
         Me.RadioMoyen.Size = New System.Drawing.Size(81, 24)
         Me.RadioMoyen.TabIndex = 3
-        Me.RadioMoyen.TabStop = True
         Me.RadioMoyen.Text = "Moyen"
         Me.RadioMoyen.UseVisualStyleBackColor = True
         '
@@ -96,7 +94,6 @@ Partial Class FormOption
         Me.RadioButtonDifficile.Name = "RadioButtonDifficile"
         Me.RadioButtonDifficile.Size = New System.Drawing.Size(85, 24)
         Me.RadioButtonDifficile.TabIndex = 4
-        Me.RadioButtonDifficile.TabStop = True
         Me.RadioButtonDifficile.Text = "Difficile"
         Me.RadioButtonDifficile.UseVisualStyleBackColor = True
         '
@@ -108,7 +105,6 @@ Partial Class FormOption
         Me.RadioButtonPersonnalisé.Name = "RadioButtonPersonnalisé"
         Me.RadioButtonPersonnalisé.Size = New System.Drawing.Size(125, 24)
         Me.RadioButtonPersonnalisé.TabIndex = 5
-        Me.RadioButtonPersonnalisé.TabStop = True
         Me.RadioButtonPersonnalisé.Text = "Personnalisé"
         Me.RadioButtonPersonnalisé.UseVisualStyleBackColor = True
         '
@@ -201,18 +197,10 @@ Partial Class FormOption
         Me.LabelTailleTab.TabIndex = 14
         Me.LabelTailleTab.Text = "Taille du tableau "
         '
-        'TextBoxTailleTab
-        '
-        Me.TextBoxTailleTab.Location = New System.Drawing.Point(168, 17)
-        Me.TextBoxTailleTab.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.TextBoxTailleTab.Name = "TextBoxTailleTab"
-        Me.TextBoxTailleTab.Size = New System.Drawing.Size(85, 26)
-        Me.TextBoxTailleTab.TabIndex = 16
-        '
         'Panel1
         '
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Panel1.Controls.Add(Me.TextBoxTailleTab)
+        Me.Panel1.Controls.Add(Me.ComboBoxTailleTab)
         Me.Panel1.Controls.Add(Me.LabelTailleTab)
         Me.Panel1.Location = New System.Drawing.Point(458, 223)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
@@ -221,11 +209,19 @@ Partial Class FormOption
         Me.Panel1.TabIndex = 18
         Me.Panel1.Visible = False
         '
+        'ComboBoxTailleTab
+        '
+        Me.ComboBoxTailleTab.FormattingEnabled = True
+        Me.ComboBoxTailleTab.Location = New System.Drawing.Point(161, 19)
+        Me.ComboBoxTailleTab.Name = "ComboBoxTailleTab"
+        Me.ComboBoxTailleTab.Size = New System.Drawing.Size(65, 28)
+        Me.ComboBoxTailleTab.TabIndex = 15
+        '
         'FormOption
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(744, 477)
+        Me.ClientSize = New System.Drawing.Size(914, 477)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.ButtonQuitter)
         Me.Controls.Add(Me.ButtonSauvegarder)
@@ -266,6 +262,6 @@ Partial Class FormOption
     Friend WithEvents ButtonSauvegarder As Button
     Friend WithEvents ButtonQuitter As Button
     Friend WithEvents LabelTailleTab As Label
-    Friend WithEvents TextBoxTailleTab As TextBox
     Friend WithEvents Panel1 As Panel
+    Friend WithEvents ComboBoxTailleTab As ComboBox
 End Class
