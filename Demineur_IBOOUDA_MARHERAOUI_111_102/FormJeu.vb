@@ -1,7 +1,5 @@
 ﻿Public Class FormJeu
     Inherits System.Windows.Forms.Form
-    Dim tim As Integer = 60
-
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
 
     End Sub
@@ -11,15 +9,19 @@
         afficheHeure(sender, e)
     End Sub
     Private Sub afficheHeure(sender As Object, e As EventArgs) Handles Timer1.Tick
-        LabelChrono.Text = tim
-        tim -= 1
-        If tim < 0 Then
+        If (FormOption.TextBoxLimiteTemps.Text = "") Then
+            Me.LabelChrono.Text = 60
+        Else
+            Me.LabelChrono.Text = FormOption.TextBoxLimiteTemps.Text
+        End If
+        LabelChrono.Text -= 1
+        If LabelChrono.Text < 0 Then
             Timer1.Stop()
             MsgBox("Finit")
         End If
     End Sub
 
-    Private Sub ButtonStart_Click(sender As Object, e As EventArgs) Handles ButtonStart.Click
+    Private Sub PanelJeu_Click(sender As Object, e As EventArgs) Handles PanelJeu.Click
         Timer1.Start()
     End Sub
 
@@ -50,5 +52,6 @@
             Next
         Next
     End Function
+
     'Public void creerBoutons(sender As Object, e As EventArgs) 
 End Class

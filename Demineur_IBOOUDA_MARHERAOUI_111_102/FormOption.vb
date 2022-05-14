@@ -51,4 +51,5 @@
             ComboBoxTailleTab.Items.Add(tabtaille(i))
         Next
     End Sub
+
 End Class
