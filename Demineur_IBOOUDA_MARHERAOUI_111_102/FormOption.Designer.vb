@@ -121,7 +121,7 @@ Partial Class FormOption
         '
         'TextBoxNbreMines
         '
-        Me.TextBoxNbreMines.Location = New System.Drawing.Point(250, 160)
+        Me.TextBoxNbreMines.Location = New System.Drawing.Point(260, 160)
         Me.TextBoxNbreMines.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.TextBoxNbreMines.Name = "TextBoxNbreMines"
         Me.TextBoxNbreMines.Size = New System.Drawing.Size(148, 26)
@@ -140,7 +140,7 @@ Partial Class FormOption
         '
         'TextBoxLimiteTemps
         '
-        Me.TextBoxLimiteTemps.Location = New System.Drawing.Point(250, 274)
+        Me.TextBoxLimiteTemps.Location = New System.Drawing.Point(260, 274)
         Me.TextBoxLimiteTemps.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.TextBoxLimiteTemps.Name = "TextBoxLimiteTemps"
         Me.TextBoxLimiteTemps.Size = New System.Drawing.Size(148, 26)
