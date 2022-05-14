@@ -36,10 +36,8 @@ Partial Class FormOption
         Me.ComboBoxTheme = New System.Windows.Forms.ComboBox()
         Me.ButtonSauvegarder = New System.Windows.Forms.Button()
         Me.ButtonQuitter = New System.Windows.Forms.Button()
-        Me.LabelNbreLigne = New System.Windows.Forms.Label()
-        Me.LabelNbreColone = New System.Windows.Forms.Label()
-        Me.TextBoxNbreligne = New System.Windows.Forms.TextBox()
-        Me.TextBoxNbreColone = New System.Windows.Forms.TextBox()
+        Me.LabelTailleTab = New System.Windows.Forms.Label()
+        Me.TextBoxTailleTab = New System.Windows.Forms.TextBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -48,9 +46,10 @@ Partial Class FormOption
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(12, 79)
+        Me.Label1.Location = New System.Drawing.Point(18, 122)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(48, 13)
+        Me.Label1.Size = New System.Drawing.Size(76, 20)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Difficulté"
         '
@@ -58,18 +57,20 @@ Partial Class FormOption
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(174, 9)
+        Me.Label2.Location = New System.Drawing.Point(261, 14)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(134, 42)
+        Me.Label2.Size = New System.Drawing.Size(200, 64)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Option"
         '
         'RadioButtonFacile
         '
         Me.RadioButtonFacile.AutoSize = True
-        Me.RadioButtonFacile.Location = New System.Drawing.Point(24, 107)
+        Me.RadioButtonFacile.Location = New System.Drawing.Point(36, 165)
+        Me.RadioButtonFacile.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.RadioButtonFacile.Name = "RadioButtonFacile"
-        Me.RadioButtonFacile.Size = New System.Drawing.Size(53, 17)
+        Me.RadioButtonFacile.Size = New System.Drawing.Size(76, 24)
         Me.RadioButtonFacile.TabIndex = 2
         Me.RadioButtonFacile.TabStop = True
         Me.RadioButtonFacile.Text = "Facile"
@@ -78,9 +79,10 @@ Partial Class FormOption
         'RadioMoyen
         '
         Me.RadioMoyen.AutoSize = True
-        Me.RadioMoyen.Location = New System.Drawing.Point(24, 141)
+        Me.RadioMoyen.Location = New System.Drawing.Point(36, 217)
+        Me.RadioMoyen.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.RadioMoyen.Name = "RadioMoyen"
-        Me.RadioMoyen.Size = New System.Drawing.Size(57, 17)
+        Me.RadioMoyen.Size = New System.Drawing.Size(81, 24)
         Me.RadioMoyen.TabIndex = 3
         Me.RadioMoyen.TabStop = True
         Me.RadioMoyen.Text = "Moyen"
@@ -89,9 +91,10 @@ Partial Class FormOption
         'RadioButtonDifficile
         '
         Me.RadioButtonDifficile.AutoSize = True
-        Me.RadioButtonDifficile.Location = New System.Drawing.Point(24, 178)
+        Me.RadioButtonDifficile.Location = New System.Drawing.Point(36, 274)
+        Me.RadioButtonDifficile.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.RadioButtonDifficile.Name = "RadioButtonDifficile"
-        Me.RadioButtonDifficile.Size = New System.Drawing.Size(59, 17)
+        Me.RadioButtonDifficile.Size = New System.Drawing.Size(85, 24)
         Me.RadioButtonDifficile.TabIndex = 4
         Me.RadioButtonDifficile.TabStop = True
         Me.RadioButtonDifficile.Text = "Difficile"
@@ -100,9 +103,10 @@ Partial Class FormOption
         'RadioButtonPersonnalisé
         '
         Me.RadioButtonPersonnalisé.AutoSize = True
-        Me.RadioButtonPersonnalisé.Location = New System.Drawing.Point(24, 214)
+        Me.RadioButtonPersonnalisé.Location = New System.Drawing.Point(36, 329)
+        Me.RadioButtonPersonnalisé.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.RadioButtonPersonnalisé.Name = "RadioButtonPersonnalisé"
-        Me.RadioButtonPersonnalisé.Size = New System.Drawing.Size(85, 17)
+        Me.RadioButtonPersonnalisé.Size = New System.Drawing.Size(125, 24)
         Me.RadioButtonPersonnalisé.TabIndex = 5
         Me.RadioButtonPersonnalisé.TabStop = True
         Me.RadioButtonPersonnalisé.Text = "Personnalisé"
@@ -112,124 +116,116 @@ Partial Class FormOption
         '
         Me.Label.AutoSize = True
         Me.Label.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label.Location = New System.Drawing.Point(178, 79)
+        Me.Label.Location = New System.Drawing.Point(267, 122)
+        Me.Label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label.Name = "Label"
-        Me.Label.Size = New System.Drawing.Size(89, 13)
+        Me.Label.Size = New System.Drawing.Size(141, 20)
         Me.Label.TabIndex = 6
         Me.Label.Text = "Nombre de mines"
         '
         'TextBoxNbreMines
         '
-        Me.TextBoxNbreMines.Location = New System.Drawing.Point(167, 104)
+        Me.TextBoxNbreMines.Location = New System.Drawing.Point(250, 160)
+        Me.TextBoxNbreMines.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.TextBoxNbreMines.Name = "TextBoxNbreMines"
-        Me.TextBoxNbreMines.Size = New System.Drawing.Size(100, 20)
+        Me.TextBoxNbreMines.Size = New System.Drawing.Size(148, 26)
         Me.TextBoxNbreMines.TabIndex = 7
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(178, 145)
+        Me.Label3.Location = New System.Drawing.Point(267, 223)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(80, 13)
+        Me.Label3.Size = New System.Drawing.Size(129, 20)
         Me.Label3.TabIndex = 8
         Me.Label3.Text = "Limite de temps"
         '
         'TextBoxLimiteTemps
         '
-        Me.TextBoxLimiteTemps.Location = New System.Drawing.Point(167, 178)
+        Me.TextBoxLimiteTemps.Location = New System.Drawing.Point(250, 274)
+        Me.TextBoxLimiteTemps.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.TextBoxLimiteTemps.Name = "TextBoxLimiteTemps"
-        Me.TextBoxLimiteTemps.Size = New System.Drawing.Size(100, 20)
+        Me.TextBoxLimiteTemps.Size = New System.Drawing.Size(148, 26)
         Me.TextBoxLimiteTemps.TabIndex = 9
         '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(382, 79)
+        Me.Label4.Location = New System.Drawing.Point(573, 122)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(40, 13)
+        Me.Label4.Size = New System.Drawing.Size(60, 20)
         Me.Label4.TabIndex = 10
         Me.Label4.Text = "Thème"
         '
         'ComboBoxTheme
         '
         Me.ComboBoxTheme.FormattingEnabled = True
-        Me.ComboBoxTheme.Location = New System.Drawing.Point(347, 103)
+        Me.ComboBoxTheme.Location = New System.Drawing.Point(520, 158)
+        Me.ComboBoxTheme.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.ComboBoxTheme.Name = "ComboBoxTheme"
-        Me.ComboBoxTheme.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBoxTheme.Size = New System.Drawing.Size(180, 28)
         Me.ComboBoxTheme.TabIndex = 11
         '
         'ButtonSauvegarder
         '
-        Me.ButtonSauvegarder.Location = New System.Drawing.Point(305, 275)
+        Me.ButtonSauvegarder.Location = New System.Drawing.Point(458, 423)
+        Me.ButtonSauvegarder.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.ButtonSauvegarder.Name = "ButtonSauvegarder"
-        Me.ButtonSauvegarder.Size = New System.Drawing.Size(75, 23)
+        Me.ButtonSauvegarder.Size = New System.Drawing.Size(112, 35)
         Me.ButtonSauvegarder.TabIndex = 12
         Me.ButtonSauvegarder.Text = "Sauvegarder"
         Me.ButtonSauvegarder.UseVisualStyleBackColor = True
         '
         'ButtonQuitter
         '
-        Me.ButtonQuitter.Location = New System.Drawing.Point(125, 275)
+        Me.ButtonQuitter.Location = New System.Drawing.Point(188, 423)
+        Me.ButtonQuitter.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.ButtonQuitter.Name = "ButtonQuitter"
-        Me.ButtonQuitter.Size = New System.Drawing.Size(75, 23)
+        Me.ButtonQuitter.Size = New System.Drawing.Size(112, 35)
         Me.ButtonQuitter.TabIndex = 13
         Me.ButtonQuitter.Text = "Quitter"
         Me.ButtonQuitter.UseVisualStyleBackColor = True
         '
-        'LabelNbreLigne
+        'LabelTailleTab
         '
-        Me.LabelNbreLigne.AutoSize = True
-        Me.LabelNbreLigne.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelNbreLigne.Location = New System.Drawing.Point(12, 14)
-        Me.LabelNbreLigne.Name = "LabelNbreLigne"
-        Me.LabelNbreLigne.Size = New System.Drawing.Size(84, 13)
-        Me.LabelNbreLigne.TabIndex = 14
-        Me.LabelNbreLigne.Text = "Nombre de ligne"
+        Me.LabelTailleTab.AutoSize = True
+        Me.LabelTailleTab.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelTailleTab.Location = New System.Drawing.Point(18, 22)
+        Me.LabelTailleTab.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LabelTailleTab.Name = "LabelTailleTab"
+        Me.LabelTailleTab.Size = New System.Drawing.Size(136, 20)
+        Me.LabelTailleTab.TabIndex = 14
+        Me.LabelTailleTab.Text = "Taille du tableau "
         '
-        'LabelNbreColone
+        'TextBoxTailleTab
         '
-        Me.LabelNbreColone.AutoSize = True
-        Me.LabelNbreColone.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelNbreColone.Location = New System.Drawing.Point(12, 51)
-        Me.LabelNbreColone.Name = "LabelNbreColone"
-        Me.LabelNbreColone.Size = New System.Drawing.Size(94, 13)
-        Me.LabelNbreColone.TabIndex = 15
-        Me.LabelNbreColone.Text = "Nombre de colone"
-        '
-        'TextBoxNbreligne
-        '
-        Me.TextBoxNbreligne.Location = New System.Drawing.Point(112, 11)
-        Me.TextBoxNbreligne.Name = "TextBoxNbreligne"
-        Me.TextBoxNbreligne.Size = New System.Drawing.Size(58, 20)
-        Me.TextBoxNbreligne.TabIndex = 16
-        '
-        'TextBoxNbreColone
-        '
-        Me.TextBoxNbreColone.Location = New System.Drawing.Point(112, 48)
-        Me.TextBoxNbreColone.Name = "TextBoxNbreColone"
-        Me.TextBoxNbreColone.Size = New System.Drawing.Size(58, 20)
-        Me.TextBoxNbreColone.TabIndex = 17
+        Me.TextBoxTailleTab.Location = New System.Drawing.Point(168, 17)
+        Me.TextBoxTailleTab.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.TextBoxTailleTab.Name = "TextBoxTailleTab"
+        Me.TextBoxTailleTab.Size = New System.Drawing.Size(85, 26)
+        Me.TextBoxTailleTab.TabIndex = 16
         '
         'Panel1
         '
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Panel1.Controls.Add(Me.TextBoxNbreColone)
-        Me.Panel1.Controls.Add(Me.TextBoxNbreligne)
-        Me.Panel1.Controls.Add(Me.LabelNbreColone)
-        Me.Panel1.Controls.Add(Me.LabelNbreLigne)
-        Me.Panel1.Location = New System.Drawing.Point(305, 145)
+        Me.Panel1.Controls.Add(Me.TextBoxTailleTab)
+        Me.Panel1.Controls.Add(Me.LabelTailleTab)
+        Me.Panel1.Location = New System.Drawing.Point(458, 223)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(182, 85)
+        Me.Panel1.Size = New System.Drawing.Size(271, 89)
         Me.Panel1.TabIndex = 18
         Me.Panel1.Visible = False
         '
         'FormOption
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(496, 310)
+        Me.ClientSize = New System.Drawing.Size(744, 477)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.ButtonQuitter)
         Me.Controls.Add(Me.ButtonSauvegarder)
@@ -245,6 +241,7 @@ Partial Class FormOption
         Me.Controls.Add(Me.RadioButtonFacile)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "FormOption"
         Me.Text = "Option"
         Me.Panel1.ResumeLayout(False)
@@ -268,9 +265,7 @@ Partial Class FormOption
     Friend WithEvents ComboBoxTheme As ComboBox
     Friend WithEvents ButtonSauvegarder As Button
     Friend WithEvents ButtonQuitter As Button
-    Friend WithEvents LabelNbreLigne As Label
-    Friend WithEvents LabelNbreColone As Label
-    Friend WithEvents TextBoxNbreligne As TextBox
-    Friend WithEvents TextBoxNbreColone As TextBox
+    Friend WithEvents LabelTailleTab As Label
+    Friend WithEvents TextBoxTailleTab As TextBox
     Friend WithEvents Panel1 As Panel
 End Class

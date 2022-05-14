@@ -21,6 +21,9 @@
             Close()
             Form1.Show()
         End If
+        If (RadioButtonPersonnalisé.Checked = True) Then
+            FormJeu.Placer_boutons(TextBoxTailleTab.Text)
+        End If
     End Sub
 
     Private Sub RadioButtonPersonnalisé_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButtonPersonnalisé.CheckedChanged
@@ -28,5 +31,17 @@
         If (RadioButtonPersonnalisé.Checked = False) Then
             Panel1.Visible = False
         End If
+    End Sub
+
+    Private Sub RadioButtonFacile_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButtonFacile.CheckedChanged
+        FormJeu.Placer_boutons(8)
+    End Sub
+
+    Private Sub RadioMoyen_CheckedChanged(sender As Object, e As EventArgs) Handles RadioMoyen.CheckedChanged
+        FormJeu.Placer_boutons(10)
+    End Sub
+
+    Private Sub RadioButtonDifficile_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButtonDifficile.CheckedChanged
+        FormJeu.Placer_boutons(16)
     End Sub
 End Class

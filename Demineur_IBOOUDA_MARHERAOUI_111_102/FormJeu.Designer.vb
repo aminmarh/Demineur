@@ -38,39 +38,35 @@ Partial Class FormJeu
         'LabelChrono
         '
         Me.LabelChrono.AutoSize = True
-        Me.LabelChrono.Location = New System.Drawing.Point(126, 261)
-        Me.LabelChrono.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.LabelChrono.Location = New System.Drawing.Point(170, 704)
         Me.LabelChrono.Name = "LabelChrono"
-        Me.LabelChrono.Size = New System.Drawing.Size(14, 13)
+        Me.LabelChrono.Size = New System.Drawing.Size(18, 20)
         Me.LabelChrono.TabIndex = 64
         Me.LabelChrono.Text = "T"
         '
         'LabelTemps
         '
         Me.LabelTemps.AutoSize = True
-        Me.LabelTemps.Location = New System.Drawing.Point(29, 261)
-        Me.LabelTemps.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.LabelTemps.Location = New System.Drawing.Point(25, 704)
         Me.LabelTemps.Name = "LabelTemps"
-        Me.LabelTemps.Size = New System.Drawing.Size(79, 13)
+        Me.LabelTemps.Size = New System.Drawing.Size(118, 20)
         Me.LabelTemps.TabIndex = 65
         Me.LabelTemps.Text = "Temps Restant"
         '
         'ButtonStart
         '
-        Me.ButtonStart.Location = New System.Drawing.Point(184, 253)
-        Me.ButtonStart.Margin = New System.Windows.Forms.Padding(2)
+        Me.ButtonStart.Location = New System.Drawing.Point(257, 691)
         Me.ButtonStart.Name = "ButtonStart"
-        Me.ButtonStart.Size = New System.Drawing.Size(77, 27)
+        Me.ButtonStart.Size = New System.Drawing.Size(116, 42)
         Me.ButtonStart.TabIndex = 66
         Me.ButtonStart.Text = "Commencer"
         Me.ButtonStart.UseVisualStyleBackColor = True
         '
         'ButtonClose
         '
-        Me.ButtonClose.Location = New System.Drawing.Point(275, 253)
-        Me.ButtonClose.Margin = New System.Windows.Forms.Padding(2)
+        Me.ButtonClose.Location = New System.Drawing.Point(393, 691)
         Me.ButtonClose.Name = "ButtonClose"
-        Me.ButtonClose.Size = New System.Drawing.Size(77, 27)
+        Me.ButtonClose.Size = New System.Drawing.Size(116, 42)
         Me.ButtonClose.TabIndex = 67
         Me.ButtonClose.Text = "Quitter"
         Me.ButtonClose.UseVisualStyleBackColor = True
@@ -78,9 +74,10 @@ Partial Class FormJeu
         'LabelNomJoueur
         '
         Me.LabelNomJoueur.AutoSize = True
-        Me.LabelNomJoueur.Location = New System.Drawing.Point(51, 278)
+        Me.LabelNomJoueur.Location = New System.Drawing.Point(57, 730)
+        Me.LabelNomJoueur.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LabelNomJoueur.Name = "LabelNomJoueur"
-        Me.LabelNomJoueur.Size = New System.Drawing.Size(29, 13)
+        Me.LabelNomJoueur.Size = New System.Drawing.Size(42, 20)
         Me.LabelNomJoueur.TabIndex = 124
         Me.LabelNomJoueur.Text = "Nom"
         '
@@ -88,21 +85,20 @@ Partial Class FormJeu
         '
         Me.PanelJeu.Location = New System.Drawing.Point(12, 12)
         Me.PanelJeu.Name = "PanelJeu"
-        Me.PanelJeu.Size = New System.Drawing.Size(358, 235)
+        Me.PanelJeu.Size = New System.Drawing.Size(992, 661)
         Me.PanelJeu.TabIndex = 125
         '
         'FormJeu
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(382, 302)
+        Me.ClientSize = New System.Drawing.Size(1016, 792)
         Me.Controls.Add(Me.PanelJeu)
         Me.Controls.Add(Me.LabelNomJoueur)
         Me.Controls.Add(Me.ButtonClose)
         Me.Controls.Add(Me.ButtonStart)
         Me.Controls.Add(Me.LabelTemps)
         Me.Controls.Add(Me.LabelChrono)
-        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "FormJeu"
         Me.Text = "Jeu"
         Me.ResumeLayout(False)

@@ -1,5 +1,5 @@
 ﻿Public Class FormJeu
-
+    Inherits System.Windows.Forms.Form
     Dim tim As Integer = 60
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
@@ -35,13 +35,20 @@
         End If
     End Sub
 
-    Private Sub FormJeu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim PanelJeu = New TableLayoutPanel
-        For i As Integer = 0 To 7
-            For j As Integer = 0 To 8
-                PanelJeu.Controls.Add(New Button, i, j)
+    'Private Sub FormJeu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    'End Sub
+
+    Public Function Placer_boutons(ByVal taille As Integer) As Button
+        For i As Integer = 1 To taille * 40 Step 40
+            For j As Integer = 1 To taille * 33 Step 33
+                Dim mines As Button = New Button()
+                mines.Size = New Size(40, 33)
+                'mines = New Button
+                mines.Location = New Point(i, j)
+                PanelJeu.Controls.Add(mines)
             Next
         Next
-
-    End Sub
+    End Function
+    'Public void creerBoutons(sender As Object, e As EventArgs) 
 End Class
