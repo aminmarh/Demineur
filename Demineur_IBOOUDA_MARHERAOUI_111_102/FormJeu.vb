@@ -1,25 +1,33 @@
 ﻿Public Class FormJeu
     Inherits System.Windows.Forms.Form
-    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
 
-    End Sub
-
+    Dim tim As Integer
     Private Sub init(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
         Timer1.Interval = 1000
-        afficheHeure(sender, e)
+        If FormOption.TextBoxLimiteTemps.Text <> "" Then
+            LabelChrono.Text = CInt(FormOption.TextBoxLimiteTemps.Text)
+            afficheHeure(sender, e)
+        Else
+            tim = 60
+            afficheHeure(sender, e)
+        End If
     End Sub
     Private Sub afficheHeure(sender As Object, e As EventArgs) Handles Timer1.Tick
-        If (FormOption.TextBoxLimiteTemps.Text = "") Then
-            Me.LabelChrono.Text = 60
-        Else
-            Me.LabelChrono.Text = FormOption.TextBoxLimiteTemps.Text
-        End If
-        LabelChrono.Text -= 1
-        If LabelChrono.Text < 0 Then
+        LabelChrono.Text = tim
+        tim -= 1
+        If tim < 0 Then
             Timer1.Stop()
             MsgBox("Finit")
         End If
     End Sub
+
+    'Public Function chronopersonnalise(ByVal tim As Integer)
+    '    tim -= 1
+    '    If tim < 0 Then
+    '        Timer1.Stop()
+    '        MsgBox("Finit")
+    '    End If
+    'End Function
 
     Private Sub PanelJeu_Click(sender As Object, e As EventArgs) Handles PanelJeu.Click
         Timer1.Start()
@@ -52,6 +60,4 @@
             Next
         Next
     End Function
-
-    'Public void creerBoutons(sender As Object, e As EventArgs) 
 End Class

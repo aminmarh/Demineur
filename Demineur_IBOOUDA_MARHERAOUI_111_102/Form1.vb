@@ -1,4 +1,5 @@
 ﻿Public Class Form1
+
     Private Sub ButtonQuitter_Click(sender As Object, e As EventArgs) Handles ButtonQuitter.Click
         Dim Msg, Style, Title, Response
         Msg = "Etes-vous sûr de vouloir quitter ?"
@@ -17,6 +18,7 @@
     Private Sub ButtonNvPartie_Click(sender As Object, e As EventArgs) Handles ButtonNvPartie.Click
         If (ComboBoxNomJoueur.Text.Length >= 3) Then
             ComboBoxNomJoueur.Items.Add(ComboBoxNomJoueur.Text)
+            ModuleEnregistrementJoueurs.enregistrement_joueur()
             FormJeu.Show()
             FormJeu.LabelNomJoueur.Text = ComboBoxNomJoueur.Text
             ComboBoxNomJoueur.Text = ""

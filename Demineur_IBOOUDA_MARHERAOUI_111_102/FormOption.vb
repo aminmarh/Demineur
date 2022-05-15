@@ -20,7 +20,7 @@
         Response = MsgBox(Msg, Style, Title)
         If Response = vbYes Then
             If RadioButtonPersonnalisé.Checked Then
-                FormJeu.Placer_boutons(ComboBoxTailleTab.SelectedItem)
+                FormJeu.Placer_boutons(ComboBoxTailleGrille.SelectedItem)
             End If
             Close()
             Form1.Show()
@@ -48,8 +48,23 @@
 
     Private Sub FormOption_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         For i As Integer = 0 To tabtaille.Length - 1
-            ComboBoxTailleTab.Items.Add(tabtaille(i))
+            ComboBoxTailleGrille.Items.Add(tabtaille(i))
         Next
     End Sub
 
+    Private Sub ButtonChoisirFichier_Click(sender As Object, e As EventArgs) Handles ButtonChoisirFichier.Click
+        ModuleEnregistrementJoueurs.Choisir_fichier()
+    End Sub
+
+    Private Sub ButtonLireChemin_Click(sender As Object, e As EventArgs) Handles ButtonLireChemin.Click
+        ModuleEnregistrementJoueurs.Importer_joueurs()
+    End Sub
+
+    Private Sub TextBoxCheminFichier_TextChanged(sender As Object, e As EventArgs) Handles TextBoxCheminFichier.TextChanged
+
+    End Sub
+
+    'Private Sub TextBoxLimiteTemps_TextChanged(sender As Object, e As EventArgs) Handles TextBoxLimiteTemps.TextChanged
+    '    FormJeu.LabelChrono.Text = Val(TextBoxLimiteTemps.Text)
+    'End Sub
 End Class
