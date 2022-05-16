@@ -29,7 +29,6 @@ Partial Class Form1
         Me.ButtonNvPartie = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ButtonOption = New System.Windows.Forms.Button()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'ComboBoxNomJoueur
@@ -100,22 +99,11 @@ Partial Class Form1
         Me.ButtonOption.Text = "Option"
         Me.ButtonOption.UseVisualStyleBackColor = True
         '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(51, 266)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(667, 20)
-        Me.Label2.TabIndex = 7
-        Me.Label2.Text = "Veuillez sélectionner vos préférences dans le menu option avant de lancer une nou" &
-    "velle partie"
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 449)
-        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.ButtonOption)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ButtonNvPartie)
@@ -137,5 +125,4 @@ Partial Class Form1
     Friend WithEvents ButtonNvPartie As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents ButtonOption As Button
-    Friend WithEvents Label2 As Label
 End Class

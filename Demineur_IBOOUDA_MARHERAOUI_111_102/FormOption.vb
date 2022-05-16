@@ -1,5 +1,6 @@
 ﻿Public Class FormOption
     Dim tabtaille As Integer() = {2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20}
+    Dim theme As String() = {"Sombre", "Clair"}
     'Dim chemin As String
     Private Sub ButtonQuitter_Click(sender As Object, e As EventArgs) Handles ButtonQuitter.Click
         Dim Msg, Style, Title, Response
@@ -52,6 +53,10 @@
         For i As Integer = 0 To tabtaille.Length - 1
             ComboBoxTailleGrille.Items.Add(tabtaille(i))
         Next
+
+        For Each element As String In theme
+            ComboBoxTheme.Items.Add(element)
+        Next
     End Sub
 
     Private Sub ButtonChoisirFichier_Click(sender As Object, e As EventArgs) Handles ButtonChoisirFichier.Click
@@ -69,10 +74,13 @@
     Private Sub ButtonLock_Click(sender As Object, e As EventArgs) Handles ButtonLock.Click
         If (TextBoxCheminFichier.Enabled = True) Then
             TextBoxCheminFichier.Enabled = False
-            ButtonChoisirFichier.Visible = False
+            ButtonChoisirFichier.Enabled = False
+            ButtonLireChemin.Enabled = False
         Else
             TextBoxCheminFichier.Enabled = True
-            ButtonChoisirFichier.Visible = True
+            ButtonChoisirFichier.Enabled = True
+            ButtonLireChemin.Enabled = True
         End If
     End Sub
+
 End Class

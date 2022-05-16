@@ -164,12 +164,15 @@ Partial Class FormOption
         '
         'ComboBoxTheme
         '
+        Me.ComboBoxTheme.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append
+        Me.ComboBoxTheme.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
         Me.ComboBoxTheme.FormattingEnabled = True
         Me.ComboBoxTheme.Location = New System.Drawing.Point(676, 511)
         Me.ComboBoxTheme.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.ComboBoxTheme.Name = "ComboBoxTheme"
         Me.ComboBoxTheme.Size = New System.Drawing.Size(180, 28)
         Me.ComboBoxTheme.TabIndex = 11
+        Me.ComboBoxTheme.Text = "Clair"
         '
         'ButtonSauvegarder
         '
@@ -216,6 +219,8 @@ Partial Class FormOption
         '
         'ComboBoxTailleGrille
         '
+        Me.ComboBoxTailleGrille.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append
+        Me.ComboBoxTailleGrille.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
         Me.ComboBoxTailleGrille.FormattingEnabled = True
         Me.ComboBoxTailleGrille.Location = New System.Drawing.Point(156, 17)
         Me.ComboBoxTailleGrille.Name = "ComboBoxTailleGrille"
