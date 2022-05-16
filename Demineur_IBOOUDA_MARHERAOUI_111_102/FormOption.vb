@@ -1,6 +1,6 @@
 ﻿Public Class FormOption
     Dim tabtaille As Integer() = {2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20}
-    Dim chemin As String
+    'Dim chemin As String
     Private Sub ButtonQuitter_Click(sender As Object, e As EventArgs) Handles ButtonQuitter.Click
         Dim Msg, Style, Title, Response
         Msg = "Etes-vous sûr de vouloir quitter ?"
@@ -23,7 +23,7 @@
             If RadioButtonPersonnalisé.Checked Then
                 FormJeu.Placer_boutons(ComboBoxTailleGrille.SelectedItem)
             End If
-            Close()
+            Hide()
             Form1.Show()
         End If
     End Sub
@@ -48,12 +48,10 @@
     End Sub
 
     Private Sub FormOption_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        TextBoxCheminFichier.Text = chemin
+        'TextBoxCheminFichier.Text = chemin
         For i As Integer = 0 To tabtaille.Length - 1
             ComboBoxTailleGrille.Items.Add(tabtaille(i))
         Next
-
-
     End Sub
 
     Private Sub ButtonChoisirFichier_Click(sender As Object, e As EventArgs) Handles ButtonChoisirFichier.Click
@@ -62,11 +60,6 @@
 
     Private Sub ButtonLireChemin_Click(sender As Object, e As EventArgs) Handles ButtonLireChemin.Click
         lectureFichier(Me.TextBoxCheminFichier.Text)
-        'TextBoxCheminFichier.Enabled = False
-        'If (TextBoxCheminFichier.Enabled = False) Then
-        '    TextBoxCheminFichier.Enabled = True
-        'End If
-        'chemin = TextBoxCheminFichier.Text
     End Sub
 
     Private Sub TextBoxLimiteTemps_TextChanged(sender As Object, e As EventArgs) Handles TextBoxLimiteTemps.TextChanged
