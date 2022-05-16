@@ -43,6 +43,7 @@ Partial Class FormOption
         Me.ButtonChoisirFichier = New System.Windows.Forms.Button()
         Me.ButtonLireChemin = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.ButtonLock = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -230,7 +231,7 @@ Partial Class FormOption
         '
         'ButtonChoisirFichier
         '
-        Me.ButtonChoisirFichier.Location = New System.Drawing.Point(810, 332)
+        Me.ButtonChoisirFichier.Location = New System.Drawing.Point(791, 332)
         Me.ButtonChoisirFichier.Name = "ButtonChoisirFichier"
         Me.ButtonChoisirFichier.Size = New System.Drawing.Size(39, 35)
         Me.ButtonChoisirFichier.TabIndex = 20
@@ -258,11 +259,22 @@ Partial Class FormOption
         Me.Label5.TabIndex = 22
         Me.Label5.Text = "Choix du ficher"
         '
+        'ButtonLock
+        '
+        Me.ButtonLock.Location = New System.Drawing.Point(854, 332)
+        Me.ButtonLock.Name = "ButtonLock"
+        Me.ButtonLock.Size = New System.Drawing.Size(39, 35)
+        Me.ButtonLock.TabIndex = 23
+        Me.ButtonLock.Text = "L"
+        Me.ButtonLock.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.ButtonLock.UseVisualStyleBackColor = True
+        '
         'FormOption
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(914, 655)
+        Me.Controls.Add(Me.ButtonLock)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.ButtonLireChemin)
         Me.Controls.Add(Me.ButtonChoisirFichier)
@@ -313,4 +325,5 @@ Partial Class FormOption
     Friend WithEvents ButtonChoisirFichier As Button
     Friend WithEvents ButtonLireChemin As Button
     Friend WithEvents Label5 As Label
+    Friend WithEvents ButtonLock As Button
 End Class

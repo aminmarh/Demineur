@@ -30,7 +30,7 @@ Public Class Form1
         If (ComboBoxNomJoueur.Text.Length >= 3) Then
             If ComboBoxNomJoueur.Text <> ComboBoxNomJoueur.SelectedItem Then
                 ComboBoxNomJoueur.Items.Add(ComboBoxNomJoueur.Text)
-                ModuleEnregistrementJoueurs.ecritureFichier("C:\Users\Yasser\OneDrive\Documents\BUT\Semestre 2\Periode D\IHM Demineur GIT\Demineur_IBOOUDA_MARHERAOUI_111_102\bin\Debug\monfichier.txt")
+                ModuleEnregistrementJoueurs.ecritureFichier(FormOption.TextBoxCheminFichier.Text)
                 FormJeu.Show()
                 ComboBoxNomJoueur.Text = ""
                 Me.Hide()
@@ -49,6 +49,10 @@ Public Class Form1
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        lectureFichier("C:\Users\Yasser\OneDrive\Documents\BUT\Semestre 2\Periode D\IHM Demineur GIT\Demineur_IBOOUDA_MARHERAOUI_111_102\bin\Debug\monfichier.txt")
+        FormOption.TextBoxCheminFichier.Text = FormOption.Tag
+    End Sub
+
+    Private Sub Form1_UnLoad() Handles MyBase.Deactivate
+        FormOption.Tag = FormOption.TextBoxCheminFichier.Text
     End Sub
 End Class

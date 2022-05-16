@@ -58,10 +58,20 @@
 
     Private Sub ButtonLireChemin_Click(sender As Object, e As EventArgs) Handles ButtonLireChemin.Click
         lectureFichier(Me.TextBoxCheminFichier.Text)
+        TextBoxCheminFichier.Enabled = False
+        If (TextBoxCheminFichier.Enabled = False) Then
+            TextBoxCheminFichier.Enabled = True
+        End If
     End Sub
 
     Private Sub TextBoxLimiteTemps_TextChanged(sender As Object, e As EventArgs) Handles TextBoxLimiteTemps.TextChanged
         FormJeu.setTim(TextBoxLimiteTemps.Text)
     End Sub
 
+    Private Sub ButtonLock_Click(sender As Object, e As EventArgs) Handles ButtonLock.Click
+        TextBoxCheminFichier.Enabled = False
+        If (TextBoxCheminFichier.Enabled = False) Then
+            TextBoxCheminFichier.Enabled = True
+        End If
+    End Sub
 End Class
