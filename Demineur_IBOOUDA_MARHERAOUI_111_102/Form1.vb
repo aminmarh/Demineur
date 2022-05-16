@@ -49,10 +49,8 @@ Public Class Form1
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        FormOption.TextBoxCheminFichier.Text = FormOption.Tag
+        FormOption.RadioButtonFacile.Checked = True
     End Sub
 
-    Private Sub Form1_UnLoad() Handles MyBase.Deactivate
-        FormOption.Tag = FormOption.TextBoxCheminFichier.Text
-    End Sub
+
 End Class
