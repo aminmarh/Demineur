@@ -1,4 +1,6 @@
-﻿Public Class Form1
+﻿Imports System.IO
+
+Public Class Form1
 
     Private Sub ButtonQuitter_Click(sender As Object, e As EventArgs) Handles ButtonQuitter.Click
         Dim Msg, Style, Title, Response
@@ -26,17 +28,27 @@
 
     Private Sub caracteristiques_comboboxNomJoueurs()
         If (ComboBoxNomJoueur.Text.Length >= 3) Then
-            ComboBoxNomJoueur.Items.Add(ComboBoxNomJoueur.Text)
-            ModuleEnregistrementJoueurs.ecritureFichier(FormOption.TextBoxCheminFichier.Text)
-            FormJeu.Show()
-            FormJeu.LabelNomJoueur.Text = ComboBoxNomJoueur.Text
-            ComboBoxNomJoueur.Text = ""
-            Me.Hide()
+            If ComboBoxNomJoueur.Text <> ComboBoxNomJoueur.SelectedItem Then
+                ComboBoxNomJoueur.Items.Add(ComboBoxNomJoueur.Text)
+                ModuleEnregistrementJoueurs.ecritureFichier("C:\Users\Yasser\OneDrive\Documents\BUT\Semestre 2\Periode D\IHM Demineur GIT\Demineur_IBOOUDA_MARHERAOUI_111_102\bin\Debug\monfichier.txt")
+                FormJeu.Show()
+                ComboBoxNomJoueur.Text = ""
+                Me.Hide()
+            Else
+                FormJeu.Show()
+                FormJeu.LabelNomJoueur.Text = ComboBoxNomJoueur.Text
+                ComboBoxNomJoueur.Text = ""
+                Me.Hide()
+            End If
         ElseIf (ComboBoxNomJoueur.Text = "") Then
             MessageBox.Show("Renseigner un nom de joueur")
         ElseIf (ComboBoxNomJoueur.Text.Length < 3) Then
             MessageBox.Show("Erreur, nom trop court")
             ComboBoxNomJoueur.Text = ""
         End If
+    End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        lectureFichier("C:\Users\Yasser\OneDrive\Documents\BUT\Semestre 2\Periode D\IHM Demineur GIT\Demineur_IBOOUDA_MARHERAOUI_111_102\bin\Debug\monfichier.txt")
     End Sub
 End Class
