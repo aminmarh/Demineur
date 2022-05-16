@@ -18,7 +18,7 @@
     Private Sub ButtonNvPartie_Click(sender As Object, e As EventArgs) Handles ButtonNvPartie.Click
         If (ComboBoxNomJoueur.Text.Length >= 3) Then
             ComboBoxNomJoueur.Items.Add(ComboBoxNomJoueur.Text)
-            'ModuleEnregistrementJoueurs.enregistrement_joueur()
+            ModuleEnregistrementJoueurs.ecritureFichier("Z:\Semestre 2\Période D\Démineur\Demineur_IBOOUDA_MARHERAOUI_111_102\bin\Debug\monfichier.txt")
             FormJeu.Show()
             FormJeu.LabelNomJoueur.Text = ComboBoxNomJoueur.Text
             ComboBoxNomJoueur.Text = ""
@@ -37,6 +37,10 @@
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'lectureFichier("Z:\Semestre 2\Période D\Démineur\Demineur_IBOOUDA_MARHERAOUI_111_102\bin\Debug\monfichier.txt")
+        lectureFichier("Z:\Semestre 2\Période D\Démineur\Demineur_IBOOUDA_MARHERAOUI_111_102\bin\Debug\monfichier.txt")
+    End Sub
+
+    Private Sub ComboBoxNomJoueur_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBoxNomJoueur.SelectedIndexChanged
+
     End Sub
 End Class

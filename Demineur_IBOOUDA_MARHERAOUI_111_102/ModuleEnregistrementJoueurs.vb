@@ -1,56 +1,58 @@
 ﻿Imports System.IO
 
 Module ModuleEnregistrementJoueurs
-    'Public Sub lectureFichier(ByVal fichier As String)
+    Public Sub lectureFichier(ByVal fichier As String)
 
-    '    Try
-    '        ' Création d'une instance de StreamReader pour permettre la lecture de notre fichier
-    '        Dim monStreamReader As StreamReader = New StreamReader(Server.MapPath(fichier))
-    '        Dim ligne As String
+        Try
+            ' Création d'une instance de StreamReader pour permettre la lecture de notre fichier
+            Dim monStreamReader As StreamReader = New StreamReader(fichier)
+            Dim ligne As String = "test"
+            While ligne <> ""
+                ligne = monStreamReader.ReadLine()
 
-    '        'Lecture de toutes les lignes et affichage de chacune sur la page
-    '        Do
-    '            ligne = monStreamReader.ReadLine()
-    '            Response.Write(ligne)
-    '            Response.Write("</BR>")
+                If ligne <> "" Then
+                    Form1.ComboBoxNomJoueur.Items.Add(ligne)
 
-    '        Loop Until ligne Is Nothing
+                End If
 
-    '        'Fermeture du StreamReader (attention très important)
-    '        monStreamReader.Close()
+            End While
 
-    '    Catch ex As Exception
 
-    '        'Code exécuté en cas d'exception
-    '        Response.Write("Une erreur est survenue au cours de la lecture !")
-    '        Response.Write("</BR>")
-    '        Response.Write(ex.Message)
+            'Fermeture du StreamReader (attention très important)
+            monStreamReader.Close()
 
-    '    End Try
+        Catch ex As FileNotFoundException
 
-    'End Sub
+            'Code exécuté en cas d'exception
+            MsgBox("Une erreur est survenue au cours de la lecture !")
 
-    'Public Sub ecritureFichier(ByVal fichier As String)
+        End Try
 
-    '    Try
 
-    '        'Instanciation du StreamWriter avec passage du nom du fichier 
-    '        Dim monStreamWriter As StreamWriter = New StreamWriter(Server.MapPath("./") & "admin\logs\" & fichier)
+    End Sub
 
-    '        'Ecriture du texte dans votre fichier
-    '        monStreamWriter.WriteLine(Form1.ComboBoxNomJoueur.Text)
+    Public Sub ecritureFichier(ByVal fichier As String)
 
-    '        'Fermeture du StreamWriter (Très important)
-    '        monStreamWriter.Close()
+        Try
 
-    '    Catch ex As Exception
+            'Instanciation du StreamWriter avec passage du nom du fichier 
+            Dim monStreamWriter As StreamWriter = New StreamWriter(fichier, True)
 
-    '        'Code exécuté en cas d'exception
-    '        MsgBox.Write(ex.Message)
+            'Ecriture du texte dans votre fichier
+            monStreamWriter.WriteLine(Form1.ComboBoxNomJoueur.Text)
 
-    '    End Try
+            'Fermeture du StreamWriter (Très important)
+            monStreamWriter.Close()
 
-    'End Sub
+        Catch ex As Exception
+
+            'Code exécuté en cas d'exception
+            MsgBox("erreur")
+            '(ex.Message)
+
+        End Try
+
+    End Sub
 
 
 
