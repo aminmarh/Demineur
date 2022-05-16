@@ -1,56 +1,41 @@
 ﻿Imports System.IO
 
 Module ModuleEnregistrementJoueurs
-    Public Sub lectureFichier(ByVal fichier As String)
+    Public Sub lectureFichier(fichier As String)
 
-        Try
-            ' Création d'une instance de StreamReader pour permettre la lecture de notre fichier
-            Dim monStreamReader As StreamReader = New StreamReader(fichier)
-            Dim ligne As String = "test"
-            While ligne <> ""
-                ligne = monStreamReader.ReadLine()
+        Dim monStreamReader As StreamReader = New StreamReader(fichier)
+        Dim ligne As String = "test"
+        While ligne <> ""
+            ligne = monStreamReader.ReadLine()
 
-                If ligne <> "" Then
-                    Form1.ComboBoxNomJoueur.Items.Add(ligne)
+            If ligne <> "" Then
+                Form1.ComboBoxNomJoueur.Items.Add(ligne)
 
-                End If
+            End If
 
-            End While
+        End While
 
-
-            'Fermeture du StreamReader (attention très important)
-            monStreamReader.Close()
-
-        Catch ex As FileNotFoundException
-
-            'Code exécuté en cas d'exception
-            MsgBox("Une erreur est survenue au cours de la lecture !")
-
-        End Try
-
+        monStreamReader.Close()
 
     End Sub
 
     Public Sub ecritureFichier(ByVal fichier As String)
 
-        Try
 
-            'Instanciation du StreamWriter avec passage du nom du fichier 
-            Dim monStreamWriter As StreamWriter = New StreamWriter(fichier, True)
 
-            'Ecriture du texte dans votre fichier
-            monStreamWriter.WriteLine(Form1.ComboBoxNomJoueur.Text)
+        'Instanciation du StreamWriter avec passage du nom du fichier 
+        Dim monStreamWriter As StreamWriter = New StreamWriter(fichier)
 
-            'Fermeture du StreamWriter (Très important)
-            monStreamWriter.Close()
+        For Each element As String In Form1.ComboBoxNomJoueur.Items
+            monStreamWriter.WriteLine(element)
 
-        Catch ex As Exception
+        Next
+        'Ecriture du texte dans votre fichier
 
-            'Code exécuté en cas d'exception
-            MsgBox("erreur")
-            '(ex.Message)
+        'Fermeture du StreamWriter (Très important)
+        monStreamWriter.Close()
 
-        End Try
+
 
     End Sub
 
