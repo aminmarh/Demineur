@@ -20,18 +20,6 @@ Module ModuleEnregistrementJoueurs
 
     End Sub
 
-    'Public Sub verification_doublon(fichier As String)
-    '    Dim monStreamReader As StreamReader = New StreamReader(fichier)
-    '    Dim ligne As String = "test"
-    '    While ligne <> ""
-    '        ligne = monStreamReader.ReadLine()
-    '        If ligne <> Form1.ComboBoxNomJoueur.Text Then
-    '            ModuleEnregistrementJoueurs.ecritureFichier(FormOption.TextBoxCheminFichier.Text)
-    '        End If
-    '    End While
-
-    'End Sub
-
     Public Sub ecritureFichier(fichier As String)
         'Instanciation du StreamWriter avec passage du nom du fichier 
         Dim monStreamWriter As StreamWriter = New StreamWriter(fichier)

@@ -69,8 +69,10 @@
     Private Sub ButtonLock_Click(sender As Object, e As EventArgs) Handles ButtonLock.Click
         If (TextBoxCheminFichier.Enabled = True) Then
             TextBoxCheminFichier.Enabled = False
+            ButtonChoisirFichier.Visible = False
         Else
             TextBoxCheminFichier.Enabled = True
+            ButtonChoisirFichier.Visible = True
         End If
     End Sub
 End Class

@@ -165,7 +165,7 @@ Partial Class FormOption
         'ComboBoxTheme
         '
         Me.ComboBoxTheme.FormattingEnabled = True
-        Me.ComboBoxTheme.Location = New System.Drawing.Point(663, 509)
+        Me.ComboBoxTheme.Location = New System.Drawing.Point(676, 511)
         Me.ComboBoxTheme.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.ComboBoxTheme.Name = "ComboBoxTheme"
         Me.ComboBoxTheme.Size = New System.Drawing.Size(180, 28)
