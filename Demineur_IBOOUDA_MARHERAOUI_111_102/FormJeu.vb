@@ -1,16 +1,8 @@
 ﻿Public Class FormJeu
-    Inherits System.Windows.Forms.Form
-
-    Dim tim As Integer
+    Dim tim As Integer = 60
     Private Sub init(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
         Timer1.Interval = 1000
-        If FormOption.TextBoxLimiteTemps.Text <> "" Then
-            LabelChrono.Text = CInt(FormOption.TextBoxLimiteTemps.Text)
-            afficheHeure(sender, e)
-        Else
-            tim = 60
-            afficheHeure(sender, e)
-        End If
+        afficheHeure(sender, e)
     End Sub
     Private Sub afficheHeure(sender As Object, e As EventArgs) Handles Timer1.Tick
         LabelChrono.Text = tim
@@ -20,14 +12,6 @@
             MsgBox("Finit")
         End If
     End Sub
-
-    'Public Function chronopersonnalise(ByVal tim As Integer)
-    '    tim -= 1
-    '    If tim < 0 Then
-    '        Timer1.Stop()
-    '        MsgBox("Finit")
-    '    End If
-    'End Function
 
     Private Sub PanelJeu_Click(sender As Object, e As EventArgs) Handles PanelJeu.Click
         Timer1.Start()
@@ -45,11 +29,7 @@
         End If
     End Sub
 
-    'Private Sub FormJeu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    'End Sub
-
-    Public Function Placer_boutons(ByVal taille As Integer) As Button
+    Public Sub Placer_boutons(taille As Integer)
         For i As Integer = 1 To taille * 40 Step 40
             For j As Integer = 1 To taille * 33 Step 33
                 Dim mines As Button = New Button()
@@ -59,5 +39,9 @@
                 PanelJeu.Controls.Add(mines)
             Next
         Next
-    End Function
+    End Sub
+
+    Public Sub setTim(time As String)
+        tim = time
+    End Sub
 End Class
