@@ -53,11 +53,11 @@
     End Sub
 
     Private Sub ButtonChoisirFichier_Click(sender As Object, e As EventArgs) Handles ButtonChoisirFichier.Click
-        'ModuleEnregistrementJoueurs.Choisir_fichier()
+        ModuleEnregistrementJoueurs.Choisir_fichier()
     End Sub
 
     Private Sub ButtonLireChemin_Click(sender As Object, e As EventArgs) Handles ButtonLireChemin.Click
-        'ModuleEnregistrementJoueurs.Importer_joueurs()
+        lectureFichier(Me.TextBoxCheminFichier.Text)
     End Sub
 
     Private Sub TextBoxLimiteTemps_TextChanged(sender As Object, e As EventArgs) Handles TextBoxLimiteTemps.TextChanged

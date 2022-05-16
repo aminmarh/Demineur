@@ -35,12 +35,4 @@
         FormOption.Show()
         Me.Hide()
     End Sub
-
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        lectureFichier("Z:\Semestre 2\Période D\Démineur\Demineur_IBOOUDA_MARHERAOUI_111_102\bin\Debug\monfichier.txt")
-    End Sub
-
-    Private Sub ComboBoxNomJoueur_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBoxNomJoueur.SelectedIndexChanged
-
-    End Sub
 End Class

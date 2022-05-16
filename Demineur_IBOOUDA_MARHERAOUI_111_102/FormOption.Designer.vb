@@ -110,7 +110,7 @@ Partial Class FormOption
         '
         Me.Label.AutoSize = True
         Me.Label.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label.Location = New System.Drawing.Point(21, 336)
+        Me.Label.Location = New System.Drawing.Point(31, 307)
         Me.Label.Name = "Label"
         Me.Label.Size = New System.Drawing.Size(89, 13)
         Me.Label.TabIndex = 6
@@ -118,7 +118,7 @@ Partial Class FormOption
         '
         'TextBoxNbreMines
         '
-        Me.TextBoxNbreMines.Location = New System.Drawing.Point(16, 361)
+        Me.TextBoxNbreMines.Location = New System.Drawing.Point(26, 332)
         Me.TextBoxNbreMines.Name = "TextBoxNbreMines"
         Me.TextBoxNbreMines.Size = New System.Drawing.Size(100, 20)
         Me.TextBoxNbreMines.TabIndex = 7
@@ -127,7 +127,7 @@ Partial Class FormOption
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(256, 336)
+        Me.Label3.Location = New System.Drawing.Point(266, 307)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(80, 13)
         Me.Label3.TabIndex = 8
@@ -135,7 +135,7 @@ Partial Class FormOption
         '
         'TextBoxLimiteTemps
         '
-        Me.TextBoxLimiteTemps.Location = New System.Drawing.Point(249, 361)
+        Me.TextBoxLimiteTemps.Location = New System.Drawing.Point(259, 332)
         Me.TextBoxLimiteTemps.Name = "TextBoxLimiteTemps"
         Me.TextBoxLimiteTemps.Size = New System.Drawing.Size(100, 20)
         Me.TextBoxLimiteTemps.TabIndex = 9
@@ -144,7 +144,7 @@ Partial Class FormOption
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(478, 336)
+        Me.Label4.Location = New System.Drawing.Point(488, 307)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(40, 13)
         Me.Label4.TabIndex = 10
@@ -153,14 +153,14 @@ Partial Class FormOption
         'ComboBoxTheme
         '
         Me.ComboBoxTheme.FormattingEnabled = True
-        Me.ComboBoxTheme.Location = New System.Drawing.Point(432, 360)
+        Me.ComboBoxTheme.Location = New System.Drawing.Point(442, 331)
         Me.ComboBoxTheme.Name = "ComboBoxTheme"
         Me.ComboBoxTheme.Size = New System.Drawing.Size(121, 21)
         Me.ComboBoxTheme.TabIndex = 11
         '
         'ButtonSauvegarder
         '
-        Me.ButtonSauvegarder.Location = New System.Drawing.Point(344, 421)
+        Me.ButtonSauvegarder.Location = New System.Drawing.Point(354, 392)
         Me.ButtonSauvegarder.Name = "ButtonSauvegarder"
         Me.ButtonSauvegarder.Size = New System.Drawing.Size(75, 23)
         Me.ButtonSauvegarder.TabIndex = 12
@@ -169,7 +169,7 @@ Partial Class FormOption
         '
         'ButtonQuitter
         '
-        Me.ButtonQuitter.Location = New System.Drawing.Point(171, 421)
+        Me.ButtonQuitter.Location = New System.Drawing.Point(181, 392)
         Me.ButtonQuitter.Name = "ButtonQuitter"
         Me.ButtonQuitter.Size = New System.Drawing.Size(75, 23)
         Me.ButtonQuitter.TabIndex = 13
@@ -208,7 +208,7 @@ Partial Class FormOption
         '
         'TextBoxCheminFichier
         '
-        Me.TextBoxCheminFichier.Location = New System.Drawing.Point(24, 239)
+        Me.TextBoxCheminFichier.Location = New System.Drawing.Point(24, 216)
         Me.TextBoxCheminFichier.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBoxCheminFichier.Name = "TextBoxCheminFichier"
         Me.TextBoxCheminFichier.Size = New System.Drawing.Size(493, 20)
@@ -216,7 +216,7 @@ Partial Class FormOption
         '
         'ButtonChoisirFichier
         '
-        Me.ButtonChoisirFichier.Location = New System.Drawing.Point(540, 239)
+        Me.ButtonChoisirFichier.Location = New System.Drawing.Point(540, 216)
         Me.ButtonChoisirFichier.Margin = New System.Windows.Forms.Padding(2)
         Me.ButtonChoisirFichier.Name = "ButtonChoisirFichier"
         Me.ButtonChoisirFichier.Size = New System.Drawing.Size(26, 23)
@@ -227,7 +227,7 @@ Partial Class FormOption
         '
         'ButtonLireChemin
         '
-        Me.ButtonLireChemin.Location = New System.Drawing.Point(269, 274)
+        Me.ButtonLireChemin.Location = New System.Drawing.Point(269, 251)
         Me.ButtonLireChemin.Margin = New System.Windows.Forms.Padding(2)
         Me.ButtonLireChemin.Name = "ButtonLireChemin"
         Me.ButtonLireChemin.Size = New System.Drawing.Size(73, 24)
@@ -239,7 +239,7 @@ Partial Class FormOption
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(245, 198)
+        Me.Label5.Location = New System.Drawing.Point(245, 175)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(113, 20)
         Me.Label5.TabIndex = 22
@@ -249,7 +249,7 @@ Partial Class FormOption
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(609, 454)
+        Me.ClientSize = New System.Drawing.Size(609, 426)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.ButtonLireChemin)
         Me.Controls.Add(Me.ButtonChoisirFichier)
