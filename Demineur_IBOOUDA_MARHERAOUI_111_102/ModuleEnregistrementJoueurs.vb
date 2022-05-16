@@ -19,7 +19,7 @@ Module ModuleEnregistrementJoueurs
 
     End Sub
 
-    Public Sub ecritureFichier(ByVal fichier As String)
+    Public Sub ecritureFichier(fichier As String)
         'Instanciation du StreamWriter avec passage du nom du fichier 
         Dim monStreamWriter As StreamWriter = New StreamWriter(fichier)
 
@@ -27,7 +27,6 @@ Module ModuleEnregistrementJoueurs
             monStreamWriter.WriteLine(element)
 
         Next
-        'Ecriture du texte dans votre fichier
 
         'Fermeture du StreamWriter (Très important)
         monStreamWriter.Close()

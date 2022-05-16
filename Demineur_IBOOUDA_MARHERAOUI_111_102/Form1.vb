@@ -16,9 +16,18 @@
     End Sub
 
     Private Sub ButtonNvPartie_Click(sender As Object, e As EventArgs) Handles ButtonNvPartie.Click
+        caracteristiques_comboboxNomJoueurs()
+    End Sub
+
+    Private Sub ButtonOption_Click(sender As Object, e As EventArgs) Handles ButtonOption.Click
+        FormOption.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub caracteristiques_comboboxNomJoueurs()
         If (ComboBoxNomJoueur.Text.Length >= 3) Then
             ComboBoxNomJoueur.Items.Add(ComboBoxNomJoueur.Text)
-            ModuleEnregistrementJoueurs.ecritureFichier("Z:\Semestre 2\Période D\Démineur\Demineur_IBOOUDA_MARHERAOUI_111_102\bin\Debug\monfichier.txt")
+            ModuleEnregistrementJoueurs.ecritureFichier(FormOption.TextBoxCheminFichier.Text)
             FormJeu.Show()
             FormJeu.LabelNomJoueur.Text = ComboBoxNomJoueur.Text
             ComboBoxNomJoueur.Text = ""
@@ -29,10 +38,5 @@
             MessageBox.Show("Erreur, nom trop court")
             ComboBoxNomJoueur.Text = ""
         End If
-    End Sub
-
-    Private Sub ButtonOption_Click(sender As Object, e As EventArgs) Handles ButtonOption.Click
-        FormOption.Show()
-        Me.Hide()
     End Sub
 End Class
