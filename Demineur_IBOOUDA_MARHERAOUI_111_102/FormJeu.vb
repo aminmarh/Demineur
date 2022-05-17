@@ -24,7 +24,7 @@
         Title = "Attention"
         Response = MsgBox(Msg, Style, Title)
         If Response = vbYes Then
-            Close()
+            Hide()
             Form1.Show()
         End If
     End Sub
