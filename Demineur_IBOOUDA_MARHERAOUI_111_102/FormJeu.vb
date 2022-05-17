@@ -1,9 +1,11 @@
 ﻿Public Class FormJeu
     Dim tim As Integer = 60
+
     Private Sub init(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
         Timer1.Interval = 1000
         afficheHeure(sender, e)
     End Sub
+
     Private Sub afficheHeure(sender As Object, e As EventArgs) Handles Timer1.Tick
         LabelChrono.Text = tim
         tim -= 1
@@ -34,7 +36,6 @@
             For j As Integer = 1 To taille * 33 Step 33
                 Dim mines As Button = New Button()
                 mines.Size = New Size(40, 33)
-                'mines = New Button
                 mines.Location = New Point(i, j)
                 PanelJeu.Controls.Add(mines)
             Next

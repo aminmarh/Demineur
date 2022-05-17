@@ -110,7 +110,7 @@ Partial Class FormOption
         '
         Me.Label.AutoSize = True
         Me.Label.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label.Location = New System.Drawing.Point(31, 307)
+        Me.Label.Location = New System.Drawing.Point(31, 263)
         Me.Label.Name = "Label"
         Me.Label.Size = New System.Drawing.Size(89, 13)
         Me.Label.TabIndex = 6
@@ -118,7 +118,7 @@ Partial Class FormOption
         '
         'TextBoxNbreMines
         '
-        Me.TextBoxNbreMines.Location = New System.Drawing.Point(26, 332)
+        Me.TextBoxNbreMines.Location = New System.Drawing.Point(26, 288)
         Me.TextBoxNbreMines.Name = "TextBoxNbreMines"
         Me.TextBoxNbreMines.Size = New System.Drawing.Size(100, 20)
         Me.TextBoxNbreMines.TabIndex = 7
@@ -127,7 +127,7 @@ Partial Class FormOption
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(266, 307)
+        Me.Label3.Location = New System.Drawing.Point(266, 263)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(80, 13)
         Me.Label3.TabIndex = 8
@@ -135,7 +135,7 @@ Partial Class FormOption
         '
         'TextBoxLimiteTemps
         '
-        Me.TextBoxLimiteTemps.Location = New System.Drawing.Point(259, 332)
+        Me.TextBoxLimiteTemps.Location = New System.Drawing.Point(259, 288)
         Me.TextBoxLimiteTemps.Name = "TextBoxLimiteTemps"
         Me.TextBoxLimiteTemps.Size = New System.Drawing.Size(100, 20)
         Me.TextBoxLimiteTemps.TabIndex = 9
@@ -144,7 +144,7 @@ Partial Class FormOption
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(488, 307)
+        Me.Label4.Location = New System.Drawing.Point(488, 263)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(40, 13)
         Me.Label4.TabIndex = 10
@@ -155,7 +155,7 @@ Partial Class FormOption
         Me.ComboBoxTheme.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append
         Me.ComboBoxTheme.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
         Me.ComboBoxTheme.FormattingEnabled = True
-        Me.ComboBoxTheme.Location = New System.Drawing.Point(451, 332)
+        Me.ComboBoxTheme.Location = New System.Drawing.Point(451, 288)
         Me.ComboBoxTheme.Name = "ComboBoxTheme"
         Me.ComboBoxTheme.Size = New System.Drawing.Size(121, 21)
         Me.ComboBoxTheme.TabIndex = 11
@@ -163,7 +163,7 @@ Partial Class FormOption
         '
         'ButtonSauvegarder
         '
-        Me.ButtonSauvegarder.Location = New System.Drawing.Point(354, 392)
+        Me.ButtonSauvegarder.Location = New System.Drawing.Point(354, 348)
         Me.ButtonSauvegarder.Name = "ButtonSauvegarder"
         Me.ButtonSauvegarder.Size = New System.Drawing.Size(75, 23)
         Me.ButtonSauvegarder.TabIndex = 12
@@ -172,7 +172,7 @@ Partial Class FormOption
         '
         'ButtonQuitter
         '
-        Me.ButtonQuitter.Location = New System.Drawing.Point(181, 392)
+        Me.ButtonQuitter.Location = New System.Drawing.Point(181, 348)
         Me.ButtonQuitter.Name = "ButtonQuitter"
         Me.ButtonQuitter.Size = New System.Drawing.Size(75, 23)
         Me.ButtonQuitter.TabIndex = 13
@@ -255,7 +255,7 @@ Partial Class FormOption
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(609, 426)
+        Me.ClientSize = New System.Drawing.Size(609, 389)
         Me.Controls.Add(Me.ButtonLock)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.ButtonChoisirFichier)

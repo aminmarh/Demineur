@@ -1,7 +1,7 @@
 ﻿Public Class FormOption
     Dim tabtaille As Integer() = {2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20}
     Dim theme As String() = {"Sombre", "Clair"}
-    'Dim chemin As String
+
     Private Sub ButtonQuitter_Click(sender As Object, e As EventArgs) Handles ButtonQuitter.Click
         Dim Msg, Style, Title, Response
         Msg = "Etes-vous sûr de vouloir quitter ?"
@@ -49,7 +49,6 @@
     End Sub
 
     Private Sub FormOption_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'TextBoxCheminFichier.Text = chemin
         For i As Integer = 0 To tabtaille.Length - 1
             ComboBoxTailleGrille.Items.Add(tabtaille(i))
         Next
@@ -76,7 +75,10 @@
         End If
     End Sub
 
-    Private Sub ButtonLireChemin_Click(sender As Object, e As EventArgs)
+    Private Sub TextBoxCheminFichier_TextChanged(sender As Object, e As EventArgs) Handles TextBoxCheminFichier.TextChanged
+        If TextBoxCheminFichier.Text <> "" Then
+            Form1.LabelChoisirFichier.Visible = False
+        End If
 
     End Sub
 End Class
