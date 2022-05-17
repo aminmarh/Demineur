@@ -61,9 +61,6 @@
 
     Private Sub ButtonChoisirFichier_Click(sender As Object, e As EventArgs) Handles ButtonChoisirFichier.Click
         ModuleEnregistrementJoueurs.Choisir_fichier()
-    End Sub
-
-    Private Sub ButtonLireChemin_Click(sender As Object, e As EventArgs) Handles ButtonLireChemin.Click
         lectureFichier(Me.TextBoxCheminFichier.Text)
     End Sub
 
@@ -74,13 +71,12 @@
     Private Sub ButtonLock_Click(sender As Object, e As EventArgs) Handles ButtonLock.Click
         If (TextBoxCheminFichier.Enabled = True) Then
             TextBoxCheminFichier.Enabled = False
-            ButtonChoisirFichier.Enabled = False
-            ButtonLireChemin.Enabled = False
         Else
             TextBoxCheminFichier.Enabled = True
-            ButtonChoisirFichier.Enabled = True
-            ButtonLireChemin.Enabled = True
         End If
     End Sub
 
+    Private Sub ButtonLireChemin_Click(sender As Object, e As EventArgs)
+
+    End Sub
 End Class
