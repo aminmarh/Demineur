@@ -23,16 +23,16 @@ Partial Class FormOption
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.LabelOption = New System.Windows.Forms.Label()
         Me.RadioButtonFacile = New System.Windows.Forms.RadioButton()
         Me.RadioMoyen = New System.Windows.Forms.RadioButton()
         Me.RadioButtonDifficile = New System.Windows.Forms.RadioButton()
         Me.RadioButtonPersonnalisé = New System.Windows.Forms.RadioButton()
-        Me.Label = New System.Windows.Forms.Label()
+        Me.LabelNbreMines = New System.Windows.Forms.Label()
         Me.TextBoxNbreMines = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Me.LabelMimiteTemps = New System.Windows.Forms.Label()
         Me.TextBoxLimiteTemps = New System.Windows.Forms.TextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.LabelTheme = New System.Windows.Forms.Label()
         Me.ComboBoxTheme = New System.Windows.Forms.ComboBox()
         Me.ButtonSauvegarder = New System.Windows.Forms.Button()
         Me.ButtonQuitter = New System.Windows.Forms.Button()
@@ -41,7 +41,7 @@ Partial Class FormOption
         Me.ComboBoxTailleGrille = New System.Windows.Forms.ComboBox()
         Me.TextBoxCheminFichier = New System.Windows.Forms.TextBox()
         Me.ButtonChoisirFichier = New System.Windows.Forms.Button()
-        Me.Label5 = New System.Windows.Forms.Label()
+        Me.LabelChoixFichier = New System.Windows.Forms.Label()
         Me.ButtonLock = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -56,15 +56,15 @@ Partial Class FormOption
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Difficulté"
         '
-        'Label2
+        'LabelOption
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(233, 9)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(134, 42)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Option"
+        Me.LabelOption.AutoSize = True
+        Me.LabelOption.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelOption.Location = New System.Drawing.Point(233, 9)
+        Me.LabelOption.Name = "LabelOption"
+        Me.LabelOption.Size = New System.Drawing.Size(134, 42)
+        Me.LabelOption.TabIndex = 1
+        Me.LabelOption.Text = "Option"
         '
         'RadioButtonFacile
         '
@@ -106,15 +106,15 @@ Partial Class FormOption
         Me.RadioButtonPersonnalisé.Text = "Personnalisé"
         Me.RadioButtonPersonnalisé.UseVisualStyleBackColor = True
         '
-        'Label
+        'LabelNbreMines
         '
-        Me.Label.AutoSize = True
-        Me.Label.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label.Location = New System.Drawing.Point(31, 263)
-        Me.Label.Name = "Label"
-        Me.Label.Size = New System.Drawing.Size(89, 13)
-        Me.Label.TabIndex = 6
-        Me.Label.Text = "Nombre de mines"
+        Me.LabelNbreMines.AutoSize = True
+        Me.LabelNbreMines.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelNbreMines.Location = New System.Drawing.Point(31, 263)
+        Me.LabelNbreMines.Name = "LabelNbreMines"
+        Me.LabelNbreMines.Size = New System.Drawing.Size(89, 13)
+        Me.LabelNbreMines.TabIndex = 6
+        Me.LabelNbreMines.Text = "Nombre de mines"
         '
         'TextBoxNbreMines
         '
@@ -123,15 +123,15 @@ Partial Class FormOption
         Me.TextBoxNbreMines.Size = New System.Drawing.Size(100, 20)
         Me.TextBoxNbreMines.TabIndex = 7
         '
-        'Label3
+        'LabelMimiteTemps
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(266, 263)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(80, 13)
-        Me.Label3.TabIndex = 8
-        Me.Label3.Text = "Limite de temps"
+        Me.LabelMimiteTemps.AutoSize = True
+        Me.LabelMimiteTemps.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelMimiteTemps.Location = New System.Drawing.Point(266, 263)
+        Me.LabelMimiteTemps.Name = "LabelMimiteTemps"
+        Me.LabelMimiteTemps.Size = New System.Drawing.Size(80, 13)
+        Me.LabelMimiteTemps.TabIndex = 8
+        Me.LabelMimiteTemps.Text = "Limite de temps"
         '
         'TextBoxLimiteTemps
         '
@@ -140,15 +140,15 @@ Partial Class FormOption
         Me.TextBoxLimiteTemps.Size = New System.Drawing.Size(100, 20)
         Me.TextBoxLimiteTemps.TabIndex = 9
         '
-        'Label4
+        'LabelTheme
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(488, 263)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(40, 13)
-        Me.Label4.TabIndex = 10
-        Me.Label4.Text = "Thème"
+        Me.LabelTheme.AutoSize = True
+        Me.LabelTheme.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelTheme.Location = New System.Drawing.Point(488, 263)
+        Me.LabelTheme.Name = "LabelTheme"
+        Me.LabelTheme.Size = New System.Drawing.Size(40, 13)
+        Me.LabelTheme.TabIndex = 10
+        Me.LabelTheme.Text = "Thème"
         '
         'ComboBoxTheme
         '
@@ -206,7 +206,7 @@ Partial Class FormOption
         Me.ComboBoxTailleGrille.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
         Me.ComboBoxTailleGrille.FormattingEnabled = True
         Me.ComboBoxTailleGrille.Location = New System.Drawing.Point(104, 11)
-        Me.ComboBoxTailleGrille.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ComboBoxTailleGrille.Margin = New System.Windows.Forms.Padding(2)
         Me.ComboBoxTailleGrille.Name = "ComboBoxTailleGrille"
         Me.ComboBoxTailleGrille.Size = New System.Drawing.Size(45, 21)
         Me.ComboBoxTailleGrille.TabIndex = 15
@@ -214,7 +214,7 @@ Partial Class FormOption
         'TextBoxCheminFichier
         '
         Me.TextBoxCheminFichier.Location = New System.Drawing.Point(24, 216)
-        Me.TextBoxCheminFichier.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBoxCheminFichier.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBoxCheminFichier.Name = "TextBoxCheminFichier"
         Me.TextBoxCheminFichier.Size = New System.Drawing.Size(493, 20)
         Me.TextBoxCheminFichier.TabIndex = 19
@@ -222,7 +222,7 @@ Partial Class FormOption
         'ButtonChoisirFichier
         '
         Me.ButtonChoisirFichier.Location = New System.Drawing.Point(527, 216)
-        Me.ButtonChoisirFichier.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ButtonChoisirFichier.Margin = New System.Windows.Forms.Padding(2)
         Me.ButtonChoisirFichier.Name = "ButtonChoisirFichier"
         Me.ButtonChoisirFichier.Size = New System.Drawing.Size(26, 23)
         Me.ButtonChoisirFichier.TabIndex = 20
@@ -230,20 +230,20 @@ Partial Class FormOption
         Me.ButtonChoisirFichier.TextAlign = System.Drawing.ContentAlignment.TopCenter
         Me.ButtonChoisirFichier.UseVisualStyleBackColor = True
         '
-        'Label5
+        'LabelChoixFichier
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(245, 175)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(113, 20)
-        Me.Label5.TabIndex = 22
-        Me.Label5.Text = "Choix du ficher"
+        Me.LabelChoixFichier.AutoSize = True
+        Me.LabelChoixFichier.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelChoixFichier.Location = New System.Drawing.Point(245, 175)
+        Me.LabelChoixFichier.Name = "LabelChoixFichier"
+        Me.LabelChoixFichier.Size = New System.Drawing.Size(113, 20)
+        Me.LabelChoixFichier.TabIndex = 22
+        Me.LabelChoixFichier.Text = "Choix du ficher"
         '
         'ButtonLock
         '
         Me.ButtonLock.Location = New System.Drawing.Point(569, 216)
-        Me.ButtonLock.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ButtonLock.Margin = New System.Windows.Forms.Padding(2)
         Me.ButtonLock.Name = "ButtonLock"
         Me.ButtonLock.Size = New System.Drawing.Size(26, 23)
         Me.ButtonLock.TabIndex = 23
@@ -257,23 +257,23 @@ Partial Class FormOption
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(609, 389)
         Me.Controls.Add(Me.ButtonLock)
-        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.LabelChoixFichier)
         Me.Controls.Add(Me.ButtonChoisirFichier)
         Me.Controls.Add(Me.TextBoxCheminFichier)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.ButtonQuitter)
         Me.Controls.Add(Me.ButtonSauvegarder)
         Me.Controls.Add(Me.ComboBoxTheme)
-        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.LabelTheme)
         Me.Controls.Add(Me.TextBoxLimiteTemps)
-        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.LabelMimiteTemps)
         Me.Controls.Add(Me.TextBoxNbreMines)
-        Me.Controls.Add(Me.Label)
+        Me.Controls.Add(Me.LabelNbreMines)
         Me.Controls.Add(Me.RadioButtonPersonnalisé)
         Me.Controls.Add(Me.RadioButtonDifficile)
         Me.Controls.Add(Me.RadioMoyen)
         Me.Controls.Add(Me.RadioButtonFacile)
-        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.LabelOption)
         Me.Controls.Add(Me.Label1)
         Me.Name = "FormOption"
         Me.Text = "Option"
@@ -285,16 +285,16 @@ Partial Class FormOption
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
+    Friend WithEvents LabelOption As Label
     Friend WithEvents RadioButtonFacile As RadioButton
     Friend WithEvents RadioMoyen As RadioButton
     Friend WithEvents RadioButtonDifficile As RadioButton
     Friend WithEvents RadioButtonPersonnalisé As RadioButton
-    Friend WithEvents Label As Label
+    Friend WithEvents LabelNbreMines As Label
     Friend WithEvents TextBoxNbreMines As TextBox
-    Friend WithEvents Label3 As Label
+    Friend WithEvents LabelMimiteTemps As Label
     Friend WithEvents TextBoxLimiteTemps As TextBox
-    Friend WithEvents Label4 As Label
+    Friend WithEvents LabelTheme As Label
     Friend WithEvents ComboBoxTheme As ComboBox
     Friend WithEvents ButtonSauvegarder As Button
     Friend WithEvents ButtonQuitter As Button
@@ -303,6 +303,6 @@ Partial Class FormOption
     Friend WithEvents ComboBoxTailleGrille As ComboBox
     Friend WithEvents TextBoxCheminFichier As TextBox
     Friend WithEvents ButtonChoisirFichier As Button
-    Friend WithEvents Label5 As Label
+    Friend WithEvents LabelChoixFichier As Label
     Friend WithEvents ButtonLock As Button
 End Class

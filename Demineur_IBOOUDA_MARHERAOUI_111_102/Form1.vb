@@ -48,5 +48,9 @@
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         FormOption.RadioButtonFacile.Checked = True
+        lectureFichier(".\monfichier.txt")
+        FormOption.TextBoxCheminFichier.Text = ".\monfichier.txt"
+        FormOption.TextBoxCheminFichier.Enabled = False
+        FormOption.ButtonChoisirFichier.Enabled = False
     End Sub
 End Class

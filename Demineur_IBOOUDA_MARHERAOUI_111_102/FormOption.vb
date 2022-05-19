@@ -78,6 +78,56 @@
         If TextBoxCheminFichier.Text <> "" Then
             Form1.LabelChoisirFichier.Visible = False
         End If
+    End Sub
 
+    Private Sub ComboBoxTheme_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBoxTheme.SelectedIndexChanged
+        If ComboBoxTheme.SelectedIndex = 0 Then
+            Form1.BackColor = Color.Black
+            Form1.Label1.ForeColor = Color.White
+            Form1.LabelNomJoueur.ForeColor = Color.White
+            Form1.LabelChoisirFichier.ForeColor = Color.White
+
+            Me.BackColor = Color.Black
+            Me.LabelChoixFichier.ForeColor = Color.White
+            Me.LabelOption.ForeColor = Color.White
+            Me.LabelMimiteTemps.ForeColor = Color.White
+            Me.LabelTheme.ForeColor = Color.White
+            Me.LabelChoixFichier.ForeColor = Color.White
+            Me.LabelNbreMines.ForeColor = Color.White
+            Me.LabelTailleTab.ForeColor = Color.White
+            Me.RadioButtonDifficile.ForeColor = Color.White
+            Me.RadioButtonFacile.ForeColor = Color.White
+            Me.RadioMoyen.ForeColor = Color.White
+            Me.RadioButtonPersonnalisé.ForeColor = Color.White
+
+            FormJeu.BackColor = Color.Black
+            FormJeu.LabelChrono.ForeColor = Color.White
+            FormJeu.LabelNomJoueur.ForeColor = Color.White
+            FormJeu.LabelTemps.ForeColor = Color.White
+
+        Else
+            Form1.BackColor = Color.White
+            Form1.Label1.ForeColor = Color.Black
+            Form1.LabelNomJoueur.ForeColor = Color.Black
+            Form1.LabelChoisirFichier.ForeColor = Color.Black
+
+            Me.BackColor = Color.White
+            Me.LabelChoixFichier.ForeColor = Color.Black
+            Me.LabelOption.ForeColor = Color.Black
+            Me.LabelMimiteTemps.ForeColor = Color.Black
+            Me.LabelTheme.ForeColor = Color.Black
+            Me.LabelChoixFichier.ForeColor = Color.Black
+            Me.LabelNbreMines.ForeColor = Color.Black
+            Me.LabelTailleTab.ForeColor = Color.Black
+            Me.RadioButtonDifficile.ForeColor = Color.Black
+            Me.RadioButtonFacile.ForeColor = Color.Black
+            Me.RadioMoyen.ForeColor = Color.Black
+            Me.RadioButtonPersonnalisé.ForeColor = Color.Black
+
+            FormJeu.BackColor = Color.White
+            FormJeu.LabelChrono.ForeColor = Color.Black
+            FormJeu.LabelNomJoueur.ForeColor = Color.Black
+            FormJeu.LabelTemps.ForeColor = Color.Black
+        End If
     End Sub
 End Class

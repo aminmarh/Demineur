@@ -42,7 +42,6 @@
                 PanelJeu.Controls.Add(mines)
             Next
         Next
-        'MsgBox("boutons placées")
     End Sub
 
     Public Sub setTim(time As String)

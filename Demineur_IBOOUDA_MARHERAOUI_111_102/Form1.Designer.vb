@@ -39,7 +39,7 @@ Partial Class Form1
         Me.ComboBoxNomJoueur.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
         Me.ComboBoxNomJoueur.FormattingEnabled = True
         Me.ComboBoxNomJoueur.Location = New System.Drawing.Point(194, 125)
-        Me.ComboBoxNomJoueur.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ComboBoxNomJoueur.Margin = New System.Windows.Forms.Padding(2)
         Me.ComboBoxNomJoueur.Name = "ComboBoxNomJoueur"
         Me.ComboBoxNomJoueur.Size = New System.Drawing.Size(312, 21)
         Me.ComboBoxNomJoueur.TabIndex = 0
@@ -57,7 +57,7 @@ Partial Class Form1
         'ButtonQuitter
         '
         Me.ButtonQuitter.Location = New System.Drawing.Point(11, 241)
-        Me.ButtonQuitter.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ButtonQuitter.Margin = New System.Windows.Forms.Padding(2)
         Me.ButtonQuitter.Name = "ButtonQuitter"
         Me.ButtonQuitter.Size = New System.Drawing.Size(108, 31)
         Me.ButtonQuitter.TabIndex = 2
@@ -67,7 +67,7 @@ Partial Class Form1
         'ButtonScore
         '
         Me.ButtonScore.Location = New System.Drawing.Point(214, 241)
-        Me.ButtonScore.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ButtonScore.Margin = New System.Windows.Forms.Padding(2)
         Me.ButtonScore.Name = "ButtonScore"
         Me.ButtonScore.Size = New System.Drawing.Size(108, 31)
         Me.ButtonScore.TabIndex = 3
@@ -77,7 +77,7 @@ Partial Class Form1
         'ButtonNvPartie
         '
         Me.ButtonNvPartie.Location = New System.Drawing.Point(414, 241)
-        Me.ButtonNvPartie.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ButtonNvPartie.Margin = New System.Windows.Forms.Padding(2)
         Me.ButtonNvPartie.Name = "ButtonNvPartie"
         Me.ButtonNvPartie.Size = New System.Drawing.Size(108, 31)
         Me.ButtonNvPartie.TabIndex = 4
@@ -125,7 +125,7 @@ Partial Class Form1
         Me.Controls.Add(Me.ButtonQuitter)
         Me.Controls.Add(Me.LabelNomJoueur)
         Me.Controls.Add(Me.ComboBoxNomJoueur)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Form1"
         Me.Text = "Acceuil"
         Me.ResumeLayout(False)
