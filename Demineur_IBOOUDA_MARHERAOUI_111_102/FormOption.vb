@@ -81,6 +81,7 @@
     End Sub
 
     Private Sub ComboBoxTheme_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBoxTheme.SelectedIndexChanged
+        'Dim b = RGB(105, 105, 105)
         If ComboBoxTheme.SelectedIndex = 0 Then
             Form1.BackColor = Color.Black
             Form1.Label1.ForeColor = Color.White
