@@ -32,14 +32,17 @@
     End Sub
 
     Public Sub Placer_boutons(taille As Integer)
+        PanelJeu.Controls.Clear()
         For i As Integer = 1 To taille * 40 Step 40
             For j As Integer = 1 To taille * 33 Step 33
                 Dim mines As Button = New Button()
                 mines.Size = New Size(40, 33)
+                'mines = New Button
                 mines.Location = New Point(i, j)
                 PanelJeu.Controls.Add(mines)
             Next
         Next
+        'MsgBox("boutons placées")
     End Sub
 
     Public Sub setTim(time As String)

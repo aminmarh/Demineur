@@ -52,7 +52,6 @@
         For i As Integer = 0 To tabtaille.Length - 1
             ComboBoxTailleGrille.Items.Add(tabtaille(i))
         Next
-
         For Each element As String In theme
             ComboBoxTheme.Items.Add(element)
         Next

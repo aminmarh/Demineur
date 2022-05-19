@@ -57,7 +57,7 @@ Partial Class FormJeu
         'ButtonClose
         '
         Me.ButtonClose.Location = New System.Drawing.Point(739, 449)
-        Me.ButtonClose.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ButtonClose.Margin = New System.Windows.Forms.Padding(2)
         Me.ButtonClose.Name = "ButtonClose"
         Me.ButtonClose.Size = New System.Drawing.Size(77, 27)
         Me.ButtonClose.TabIndex = 67
@@ -76,7 +76,7 @@ Partial Class FormJeu
         'PanelJeu
         '
         Me.PanelJeu.Location = New System.Drawing.Point(8, 8)
-        Me.PanelJeu.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PanelJeu.Margin = New System.Windows.Forms.Padding(2)
         Me.PanelJeu.Name = "PanelJeu"
         Me.PanelJeu.Size = New System.Drawing.Size(819, 430)
         Me.PanelJeu.TabIndex = 125
@@ -91,7 +91,7 @@ Partial Class FormJeu
         Me.Controls.Add(Me.ButtonClose)
         Me.Controls.Add(Me.LabelTemps)
         Me.Controls.Add(Me.LabelChrono)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "FormJeu"
         Me.Text = "Jeu"
         Me.ResumeLayout(False)
