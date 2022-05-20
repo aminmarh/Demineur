@@ -35,11 +35,11 @@
         PanelJeu.Controls.Clear()
         For i As Integer = 1 To taille * 40 Step 40
             For j As Integer = 1 To taille * 33 Step 33
-                Dim mines As Button = New Button()
-                mines.Size = New Size(40, 33)
-                'mines = New Button
-                mines.Location = New Point(i, j)
-                PanelJeu.Controls.Add(mines)
+                Dim cases As Button = New Button()
+                cases.Size = New Size(40, 33)
+                'cases = New Button
+                cases.Location = New Point(i, j)
+                PanelJeu.Controls.Add(cases)
             Next
         Next
     End Sub
