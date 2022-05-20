@@ -29,6 +29,7 @@ Partial Class FormJeu
         Me.ButtonClose = New System.Windows.Forms.Button()
         Me.LabelNomJoueur = New System.Windows.Forms.Label()
         Me.PanelJeu = New System.Windows.Forms.Panel()
+        Me.ButtonPause = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Timer1
@@ -81,11 +82,21 @@ Partial Class FormJeu
         Me.PanelJeu.Size = New System.Drawing.Size(819, 430)
         Me.PanelJeu.TabIndex = 125
         '
+        'ButtonPause
+        '
+        Me.ButtonPause.Location = New System.Drawing.Point(168, 444)
+        Me.ButtonPause.Name = "ButtonPause"
+        Me.ButtonPause.Size = New System.Drawing.Size(22, 23)
+        Me.ButtonPause.TabIndex = 126
+        Me.ButtonPause.Text = "P"
+        Me.ButtonPause.UseVisualStyleBackColor = True
+        '
         'FormJeu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(833, 487)
+        Me.Controls.Add(Me.ButtonPause)
         Me.Controls.Add(Me.PanelJeu)
         Me.Controls.Add(Me.LabelNomJoueur)
         Me.Controls.Add(Me.ButtonClose)
@@ -104,4 +115,5 @@ Partial Class FormJeu
     Friend WithEvents ButtonClose As Button
     Friend WithEvents LabelNomJoueur As Label
     Friend WithEvents PanelJeu As Panel
+    Friend WithEvents ButtonPause As Button
 End Class

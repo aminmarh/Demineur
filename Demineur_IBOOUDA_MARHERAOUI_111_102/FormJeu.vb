@@ -47,4 +47,10 @@
     Public Sub setTim(time As String)
         tim = time
     End Sub
+
+    Private Sub ButtonPause_Click(sender As Object, e As EventArgs) Handles ButtonPause.Click
+        If Timer1.Enabled = True Then
+            Timer1.Stop()
+        End If
+    End Sub
 End Class

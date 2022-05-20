@@ -31,8 +31,12 @@
 
     Private Sub RadioButtonPersonnalisé_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButtonPersonnalisé.CheckedChanged
         Panel1.Visible = True
+        TextBoxNbreMines.Enabled = True
+        TextBoxLimiteTemps.Enabled = True
         If (RadioButtonPersonnalisé.Checked = False) Then
             Panel1.Visible = False
+            TextBoxNbreMines.Enabled = False
+            TextBoxLimiteTemps.Enabled = False
         End If
     End Sub
 
@@ -83,12 +87,12 @@
     Private Sub ComboBoxTheme_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBoxTheme.SelectedIndexChanged
         'Dim b = RGB(105, 105, 105)
         If ComboBoxTheme.SelectedIndex = 0 Then
-            Form1.BackColor = Color.Black
+            Form1.BackColor = Color.FromArgb(64, 64, 64)
             Form1.Label1.ForeColor = Color.White
             Form1.LabelNomJoueur.ForeColor = Color.White
             Form1.LabelChoisirFichier.ForeColor = Color.White
 
-            Me.BackColor = Color.Black
+            Me.BackColor = Color.FromArgb(64, 64, 64)
             Me.LabelChoixFichier.ForeColor = Color.White
             Me.LabelOption.ForeColor = Color.White
             Me.LabelMimiteTemps.ForeColor = Color.White
@@ -101,7 +105,7 @@
             Me.RadioMoyen.ForeColor = Color.White
             Me.RadioButtonPersonnalisé.ForeColor = Color.White
 
-            FormJeu.BackColor = Color.Black
+            FormJeu.BackColor = Color.FromArgb(64, 64, 64)
             FormJeu.LabelChrono.ForeColor = Color.White
             FormJeu.LabelNomJoueur.ForeColor = Color.White
             FormJeu.LabelTemps.ForeColor = Color.White
