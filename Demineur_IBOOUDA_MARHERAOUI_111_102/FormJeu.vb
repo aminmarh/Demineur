@@ -1,5 +1,5 @@
 ﻿Public Class FormJeu
-    Dim tim As Integer = 60
+    Dim tim As Integer
 
     Private Sub init(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
         Timer1.Interval = 1000

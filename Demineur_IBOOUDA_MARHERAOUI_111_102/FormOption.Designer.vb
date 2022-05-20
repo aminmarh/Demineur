@@ -141,6 +141,7 @@ Partial Class FormOption
         Me.TextBoxLimiteTemps.Name = "TextBoxLimiteTemps"
         Me.TextBoxLimiteTemps.Size = New System.Drawing.Size(100, 20)
         Me.TextBoxLimiteTemps.TabIndex = 9
+        Me.TextBoxLimiteTemps.Text = "60"
         '
         'LabelTheme
         '
