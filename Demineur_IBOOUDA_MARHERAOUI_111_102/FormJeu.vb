@@ -3,6 +3,11 @@
 
     Private Sub init(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
         Timer1.Interval = 1000
+        If FormOption.RadioButtonPersonnalisé.Checked = True Then
+            tim = FormOption.TextBoxLimiteTemps.Text
+        Else
+            tim = 60
+        End If
         afficheHeure(sender, e)
     End Sub
 
@@ -26,7 +31,7 @@
         Title = "Attention"
         Response = MsgBox(Msg, Style, Title)
         If Response = vbYes Then
-            Hide()
+            Close()
             Form1.Show()
         End If
     End Sub
@@ -53,4 +58,6 @@
             Timer1.Stop()
         End If
     End Sub
+
+
 End Class

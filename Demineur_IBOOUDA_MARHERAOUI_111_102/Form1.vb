@@ -29,11 +29,13 @@
             If ComboBoxNomJoueur.Text <> ComboBoxNomJoueur.SelectedItem Then
                 ComboBoxNomJoueur.Items.Add(ComboBoxNomJoueur.Text)
                 ModuleEnregistrementJoueurs.ecritureFichier(FormOption.TextBoxCheminFichier.Text)
-                FormJeu.Show()
+                Dim Myform As New FormJeu
+                Myform.ShowDialog()
                 ComboBoxNomJoueur.Text = ""
                 Me.Hide()
             Else
-                FormJeu.Show()
+                Dim Myform As New FormJeu
+                Myform.ShowDialog()
                 FormJeu.LabelNomJoueur.Text = ComboBoxNomJoueur.Text
                 ComboBoxNomJoueur.Text = ""
                 Me.Hide()

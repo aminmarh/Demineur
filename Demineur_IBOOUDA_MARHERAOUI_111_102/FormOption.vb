@@ -135,4 +135,5 @@
             FormJeu.LabelTemps.ForeColor = Color.Black
         End If
     End Sub
+
 End Class
