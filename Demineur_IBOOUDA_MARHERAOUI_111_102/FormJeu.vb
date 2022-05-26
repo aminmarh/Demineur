@@ -34,6 +34,7 @@
             Close()
             Form1.Show()
         End If
+
     End Sub
 
     Public Sub Placer_boutons(taille As Integer)

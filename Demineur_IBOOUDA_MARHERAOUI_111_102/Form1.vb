@@ -29,13 +29,12 @@
             If ComboBoxNomJoueur.Text <> ComboBoxNomJoueur.SelectedItem Then
                 ComboBoxNomJoueur.Items.Add(ComboBoxNomJoueur.Text)
                 ModuleEnregistrementJoueurs.ecritureFichier(FormOption.TextBoxCheminFichier.Text)
-                Dim Myform As New FormJeu
-                Myform.ShowDialog()
+                'ecritureBinaire(".\fichier")
+                FormJeu.Show()
                 ComboBoxNomJoueur.Text = ""
                 Me.Hide()
             Else
-                Dim Myform As New FormJeu
-                Myform.ShowDialog()
+                FormJeu.Show()
                 FormJeu.LabelNomJoueur.Text = ComboBoxNomJoueur.Text
                 ComboBoxNomJoueur.Text = ""
                 Me.Hide()
@@ -51,7 +50,8 @@
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         FormOption.RadioButtonFacile.Checked = True
         lectureFichier(".\monfichier.txt")
-        FormOption.TextBoxCheminFichier.Text = ".\monfichier.txt"
+        'lectureBinaire(".\fichier")
+        FormOption.TextBoxCheminFichier.Text = ".\fichier"
         FormOption.TextBoxCheminFichier.Enabled = False
         FormOption.ButtonChoisirFichier.Enabled = False
     End Sub

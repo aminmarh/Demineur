@@ -29,4 +29,40 @@ Module ModuleEnregistrementJoueurs
             FormOption.TextBoxCheminFichier.Text = choisir.FileName
         End If
     End Sub
+
+    Sub ecritureBinaire(ByVal NomFichier As String)
+        Dim br As BinaryReader
+        Dim bw As BinaryWriter
+        Dim fs As FileStream
+        Dim i As Integer
+        Try
+            If Not File.Exists(NomFichier) Then
+                'Le fichier n'existe pas. On le crée
+                bw = New BinaryWriter(File.Create(NomFichier))
+                For Each element As String In Form1.ComboBoxNomJoueur.Items
+                    bw.Write(element)
+                Next
+                bw.Close()
+            End If
+            'Ouverture du fichier et Ecriture du contenu du fichier sur la console
+        Finally
+            If Not IsNothing(bw) Then bw.Close()
+        End Try
+    End Sub
+    Sub lectureBinaire(ByVal NomFichier As String)
+        Dim br As BinaryReader
+        Dim fs As FileStream
+        Dim nom As String
+        Try
+            fs = File.Open(NomFichier, FileMode.Open)
+            br = New BinaryReader(fs)
+            While fs.Position < Form1.ComboBoxNomJoueur.Items.Count
+                nom = br.ReadInt32()
+                Form1.ComboBoxNomJoueur.Items.Add(nom)
+            End While
+        Finally
+            'Fermeture Binarywriter
+            If Not IsNothing(br) Then br.Close()
+        End Try
+    End Sub
 End Module

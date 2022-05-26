@@ -64,6 +64,7 @@
     Private Sub ButtonChoisirFichier_Click(sender As Object, e As EventArgs) Handles ButtonChoisirFichier.Click
         ModuleEnregistrementJoueurs.Choisir_fichier()
         lectureFichier(Me.TextBoxCheminFichier.Text)
+        'lectureBinaire(".\fichier")
     End Sub
 
     Private Sub TextBoxLimiteTemps_TextChanged(sender As Object, e As EventArgs) Handles TextBoxLimiteTemps.TextChanged
@@ -85,7 +86,6 @@
     End Sub
 
     Private Sub ComboBoxTheme_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBoxTheme.SelectedIndexChanged
-        'Dim b = RGB(105, 105, 105)
         If ComboBoxTheme.SelectedIndex = 0 Then
             Form1.BackColor = Color.FromArgb(64, 64, 64)
             Form1.Label1.ForeColor = Color.White
@@ -110,6 +110,12 @@
             FormJeu.LabelNomJoueur.ForeColor = Color.White
             FormJeu.LabelTemps.ForeColor = Color.White
 
+            FormScore.BackColor = Color.FromArgb(64, 64, 64)
+            FormScore.Label1.ForeColor = Color.White
+            FormScore.Label2.ForeColor = Color.White
+            FormScore.Label3.ForeColor = Color.White
+            FormScore.Label4.ForeColor = Color.White
+
         Else
             Form1.BackColor = Color.White
             Form1.Label1.ForeColor = Color.Black
@@ -133,7 +139,12 @@
             FormJeu.LabelChrono.ForeColor = Color.Black
             FormJeu.LabelNomJoueur.ForeColor = Color.Black
             FormJeu.LabelTemps.ForeColor = Color.Black
+
+            FormScore.BackColor = Color.White
+            FormScore.Label1.ForeColor = Color.Black
+            FormScore.Label2.ForeColor = Color.Black
+            FormScore.Label3.ForeColor = Color.Black
+            FormScore.Label4.ForeColor = Color.Black
         End If
     End Sub
-
 End Class
