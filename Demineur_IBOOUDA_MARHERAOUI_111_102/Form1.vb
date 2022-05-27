@@ -1,5 +1,4 @@
 ﻿Public Class Form1
-
     Private Sub ButtonQuitter_Click(sender As Object, e As EventArgs) Handles ButtonQuitter.Click
         Dim Msg, Style, Title, Response
         Msg = "Etes-vous sûr de vouloir quitter ?"
@@ -10,17 +9,29 @@
             Close()
         End If
     End Sub
-
     Private Sub ButtonScore_Click(sender As Object, e As EventArgs) Handles ButtonScore.Click
         FormScore.Show()
         Me.Hide()
     End Sub
 
     Private Sub ButtonNvPartie_Click(sender As Object, e As EventArgs) Handles ButtonNvPartie.Click
+        If FormOption.ComboBoxTheme.SelectedItem = "Sombre" Then
+            FormJeu.BackColor = Color.FromArgb(64, 64, 64)
+            FormJeu.LabelChrono.ForeColor = Color.White
+            FormJeu.LabelNomJoueur.ForeColor = Color.White
+            FormJeu.LabelTemps.ForeColor = Color.White
+        End If
         caracteristiques_comboboxNomJoueurs()
     End Sub
 
     Private Sub ButtonOption_Click(sender As Object, e As EventArgs) Handles ButtonOption.Click
+        FormOption.RadioButtonFacile.Checked = False
+        FormOption.RadioMoyen.Checked = False
+        FormOption.RadioButtonDifficile.Checked = False
+        FormOption.RadioButtonPersonnalisé.Checked = False
+
+
+
         FormOption.Show()
         Me.Hide()
     End Sub
@@ -30,7 +41,6 @@
             If ComboBoxNomJoueur.Text <> ComboBoxNomJoueur.SelectedItem Then
                 ComboBoxNomJoueur.Items.Add(ComboBoxNomJoueur.Text)
                 ModuleEnregistrementJoueurs.ecritureFichier(FormOption.TextBoxCheminFichier.Text)
-                'ecritureBinaire(".\fichier")
                 FormJeu.Show()
                 ComboBoxNomJoueur.Text = ""
                 Me.Hide()
@@ -49,10 +59,9 @@
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        FormOption.RadioButtonFacile.Checked = True
+        'FormOption.RadioButtonFacile.Checked = True
         lectureFichier(".\monfichier.txt")
-        'lectureBinaire(".\fichier")
-        FormOption.TextBoxCheminFichier.Text = ".\fichier"
+        FormOption.TextBoxCheminFichier.Text = ".\monfichier.txt"
         FormOption.TextBoxCheminFichier.Enabled = False
         FormOption.ButtonChoisirFichier.Enabled = False
     End Sub

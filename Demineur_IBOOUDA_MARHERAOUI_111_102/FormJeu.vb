@@ -1,6 +1,5 @@
 ﻿Public Class FormJeu
     Dim tim As Integer
-
     Private Sub init(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
         Timer1.Interval = 1000
         If FormOption.RadioButtonPersonnalisé.Checked = True Then
@@ -10,7 +9,6 @@
         End If
         afficheHeure(sender, e)
     End Sub
-
     Private Sub afficheHeure(sender As Object, e As EventArgs) Handles Timer1.Tick
         LabelChrono.Text = tim
         tim -= 1
@@ -19,11 +17,9 @@
             MsgBox("Finit")
         End If
     End Sub
-
     Private Sub PanelJeu_Click(sender As Object, e As EventArgs) Handles PanelJeu.Click
         Timer1.Start()
     End Sub
-
     Private Sub ButtonClose_Click(sender As Object, e As EventArgs) Handles ButtonClose.Click
         Dim Msg, Style, Title, Response
         Msg = "Etes-vous sûr de vouloir quitter ?"
@@ -34,31 +30,24 @@
             Close()
             Form1.Show()
         End If
-
     End Sub
-
     Public Sub Placer_boutons(taille As Integer)
         PanelJeu.Controls.Clear()
         For i As Integer = 1 To taille * 40 Step 40
             For j As Integer = 1 To taille * 33 Step 33
                 Dim cases As Button = New Button()
                 cases.Size = New Size(40, 33)
-                'cases = New Button
                 cases.Location = New Point(i, j)
                 PanelJeu.Controls.Add(cases)
             Next
         Next
     End Sub
-
     Public Sub setTim(time As String)
         tim = time
     End Sub
-
     Private Sub ButtonPause_Click(sender As Object, e As EventArgs) Handles ButtonPause.Click
         If Timer1.Enabled = True Then
             Timer1.Stop()
         End If
     End Sub
-
-
 End Class
