@@ -22,45 +22,45 @@ Partial Class FormScore
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
-        Me.ListBox2 = New System.Windows.Forms.ListBox()
-        Me.ListBox3 = New System.Windows.Forms.ListBox()
+        Me.ListBoxNomJoueur = New System.Windows.Forms.ListBox()
+        Me.ListBoxNombredeCases = New System.Windows.Forms.ListBox()
+        Me.ListBoxNombredePartiesJouees = New System.Windows.Forms.ListBox()
         Me.ButtonQuitter = New System.Windows.Forms.Button()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.ComboBoxNomJoueurScore = New System.Windows.Forms.ComboBox()
         Me.ButtonRechercher = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.ListBox4 = New System.Windows.Forms.ListBox()
+        Me.ListBoxCumulTemps = New System.Windows.Forms.ListBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
-        'ListBox1
+        'ListBoxNomJoueur
         '
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.ItemHeight = 20
-        Me.ListBox1.Location = New System.Drawing.Point(23, 147)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(207, 304)
-        Me.ListBox1.TabIndex = 0
+        Me.ListBoxNomJoueur.FormattingEnabled = True
+        Me.ListBoxNomJoueur.ItemHeight = 20
+        Me.ListBoxNomJoueur.Location = New System.Drawing.Point(23, 147)
+        Me.ListBoxNomJoueur.Name = "ListBoxNomJoueur"
+        Me.ListBoxNomJoueur.Size = New System.Drawing.Size(207, 304)
+        Me.ListBoxNomJoueur.TabIndex = 0
         '
-        'ListBox2
+        'ListBoxNombredeCases
         '
-        Me.ListBox2.FormattingEnabled = True
-        Me.ListBox2.ItemHeight = 20
-        Me.ListBox2.Location = New System.Drawing.Point(304, 147)
-        Me.ListBox2.Name = "ListBox2"
-        Me.ListBox2.Size = New System.Drawing.Size(207, 304)
-        Me.ListBox2.TabIndex = 1
+        Me.ListBoxNombredeCases.FormattingEnabled = True
+        Me.ListBoxNombredeCases.ItemHeight = 20
+        Me.ListBoxNombredeCases.Location = New System.Drawing.Point(304, 147)
+        Me.ListBoxNombredeCases.Name = "ListBoxNombredeCases"
+        Me.ListBoxNombredeCases.Size = New System.Drawing.Size(207, 304)
+        Me.ListBoxNombredeCases.TabIndex = 1
         '
-        'ListBox3
+        'ListBoxNombredePartiesJouees
         '
-        Me.ListBox3.FormattingEnabled = True
-        Me.ListBox3.ItemHeight = 20
-        Me.ListBox3.Location = New System.Drawing.Point(596, 147)
-        Me.ListBox3.Name = "ListBox3"
-        Me.ListBox3.Size = New System.Drawing.Size(207, 304)
-        Me.ListBox3.TabIndex = 2
+        Me.ListBoxNombredePartiesJouees.FormattingEnabled = True
+        Me.ListBoxNombredePartiesJouees.ItemHeight = 20
+        Me.ListBoxNombredePartiesJouees.Location = New System.Drawing.Point(596, 147)
+        Me.ListBoxNombredePartiesJouees.Name = "ListBoxNombredePartiesJouees"
+        Me.ListBoxNombredePartiesJouees.Size = New System.Drawing.Size(207, 304)
+        Me.ListBoxNombredePartiesJouees.TabIndex = 2
         '
         'ButtonQuitter
         '
@@ -71,16 +71,16 @@ Partial Class FormScore
         Me.ButtonQuitter.Text = "Quitter"
         Me.ButtonQuitter.UseVisualStyleBackColor = True
         '
-        'ComboBox1
+        'ComboBoxNomJoueurScore
         '
-        Me.ComboBox1.AllowDrop = True
-        Me.ComboBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append
-        Me.ComboBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(372, 36)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(277, 28)
-        Me.ComboBox1.TabIndex = 4
+        Me.ComboBoxNomJoueurScore.AllowDrop = True
+        Me.ComboBoxNomJoueurScore.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append
+        Me.ComboBoxNomJoueurScore.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
+        Me.ComboBoxNomJoueurScore.FormattingEnabled = True
+        Me.ComboBoxNomJoueurScore.Location = New System.Drawing.Point(372, 36)
+        Me.ComboBoxNomJoueurScore.Name = "ComboBoxNomJoueurScore"
+        Me.ComboBoxNomJoueurScore.Size = New System.Drawing.Size(277, 28)
+        Me.ComboBoxNomJoueurScore.TabIndex = 4
         '
         'ButtonRechercher
         '
@@ -109,14 +109,14 @@ Partial Class FormScore
         Me.Label2.TabIndex = 7
         Me.Label2.Text = "Nombre de case"
         '
-        'ListBox4
+        'ListBoxCumulTemps
         '
-        Me.ListBox4.FormattingEnabled = True
-        Me.ListBox4.ItemHeight = 20
-        Me.ListBox4.Location = New System.Drawing.Point(887, 147)
-        Me.ListBox4.Name = "ListBox4"
-        Me.ListBox4.Size = New System.Drawing.Size(207, 304)
-        Me.ListBox4.TabIndex = 8
+        Me.ListBoxCumulTemps.FormattingEnabled = True
+        Me.ListBoxCumulTemps.ItemHeight = 20
+        Me.ListBoxCumulTemps.Location = New System.Drawing.Point(887, 147)
+        Me.ListBoxCumulTemps.Name = "ListBoxCumulTemps"
+        Me.ListBoxCumulTemps.Size = New System.Drawing.Size(207, 304)
+        Me.ListBoxCumulTemps.TabIndex = 8
         '
         'Label3
         '
@@ -143,15 +143,15 @@ Partial Class FormScore
         Me.ClientSize = New System.Drawing.Size(1128, 528)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.ListBox4)
+        Me.Controls.Add(Me.ListBoxCumulTemps)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ButtonRechercher)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.ComboBoxNomJoueurScore)
         Me.Controls.Add(Me.ButtonQuitter)
-        Me.Controls.Add(Me.ListBox3)
-        Me.Controls.Add(Me.ListBox2)
-        Me.Controls.Add(Me.ListBox1)
+        Me.Controls.Add(Me.ListBoxNombredePartiesJouees)
+        Me.Controls.Add(Me.ListBoxNombredeCases)
+        Me.Controls.Add(Me.ListBoxNomJoueur)
         Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "FormScore"
         Me.Text = "Score"
@@ -160,15 +160,15 @@ Partial Class FormScore
 
     End Sub
 
-    Friend WithEvents ListBox1 As ListBox
-    Friend WithEvents ListBox2 As ListBox
-    Friend WithEvents ListBox3 As ListBox
+    Friend WithEvents ListBoxNomJoueur As ListBox
+    Friend WithEvents ListBoxNombredeCases As ListBox
+    Friend WithEvents ListBoxNombredePartiesJouees As ListBox
     Friend WithEvents ButtonQuitter As Button
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents ComboBoxNomJoueurScore As ComboBox
     Friend WithEvents ButtonRechercher As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents ListBox4 As ListBox
+    Friend WithEvents ListBoxCumulTemps As ListBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
 End Class

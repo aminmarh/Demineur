@@ -7,10 +7,11 @@
         Response = MsgBox(Msg, Style, Title)
         If Response = vbYes Then
             Close()
+            Form1.Show()
         End If
     End Sub
 
-    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
+    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBoxNomJoueurScore.SelectedIndexChanged
 
     End Sub
 

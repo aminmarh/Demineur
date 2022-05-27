@@ -13,6 +13,7 @@
 
     Private Sub ButtonScore_Click(sender As Object, e As EventArgs) Handles ButtonScore.Click
         FormScore.Show()
+        Me.Hide()
     End Sub
 
     Private Sub ButtonNvPartie_Click(sender As Object, e As EventArgs) Handles ButtonNvPartie.Click

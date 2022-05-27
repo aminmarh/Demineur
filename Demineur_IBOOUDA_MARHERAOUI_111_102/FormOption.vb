@@ -42,6 +42,7 @@
 
     Private Sub RadioButtonFacile_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButtonFacile.CheckedChanged
         FormJeu.Placer_boutons(8)
+        'init(8, 8, 10, 8)
     End Sub
 
     Private Sub RadioMoyen_CheckedChanged(sender As Object, e As EventArgs) Handles RadioMoyen.CheckedChanged

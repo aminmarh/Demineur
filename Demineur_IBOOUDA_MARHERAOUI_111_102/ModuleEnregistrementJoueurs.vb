@@ -9,6 +9,8 @@ Module ModuleEnregistrementJoueurs
             ligne = monStreamReader.ReadLine()
             If ligne <> "" Then
                 Form1.ComboBoxNomJoueur.Items.Add(ligne)
+                FormScore.ComboBoxNomJoueurScore.Items.Add(ligne)
+                FormScore.ListBoxNomJoueur.Items.Add(ligne)
             End If
         End While
         monStreamReader.Close()
