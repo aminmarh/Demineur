@@ -6,13 +6,14 @@
         Title = "Attention"
         Response = MsgBox(Msg, Style, Title)
         If Response = vbYes Then
-            Close()
+            Hide()
             Form1.Show()
         End If
     End Sub
 
-    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBoxNomJoueurScore.SelectedIndexChanged
-
+    Private Sub ButtonRechercher_Click(sender As Object, e As EventArgs) Handles ButtonRechercher.Click
+        MessageBox.Show("Le Joueur " & ComboBoxNomJoueurScore.SelectedItem & vbCrLf & "a un temps cumulé de : " &
+                        "..." & vbCrLf & "Le nombre de cases trouvées est de : " & "..." & vbCrLf &
+                        "Le nombre de parties jouées est de :" & "...")
     End Sub
-
 End Class

@@ -2,7 +2,7 @@
     Dim tabtaille As Integer() = {2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20}
     Dim theme As String() = {"Sombre", "Clair"}
 
-    Private Sub ButtonQuitter_Click(sender As Object, e As EventArgs) Handles ButtonQuitter.Click
+    Private Sub ButtonQuitter_Click(sender As Object, e As EventArgs)
         Dim Msg, Style, Title, Response
         Msg = "Etes-vous sûr de vouloir quitter ?"
         Style = vbYesNo + vbCritical + vbDefaultButton2
@@ -23,6 +23,12 @@
         If Response = vbYes Then
             If RadioButtonPersonnalisé.Checked Then
                 FormJeu.Placer_boutons(ComboBoxTailleGrille.SelectedItem)
+            ElseIf RadioButtonDifficile.Checked Then
+                FormJeu.Placer_boutons(16)
+            ElseIf RadioMoyen.Checked Then
+                FormJeu.Placer_boutons(10)
+            ElseIf RadioButtonFacile.Checked Then
+                FormJeu.Placer_boutons(8)
             End If
             Hide()
             Form1.Show()
@@ -40,17 +46,19 @@
         End If
     End Sub
 
-    Private Sub RadioButtonFacile_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButtonFacile.CheckedChanged
+    Private Sub radiobuttonfacile_checkedchanged(sender As Object, e As EventArgs) Handles RadioButtonFacile.CheckedChanged
         FormJeu.Placer_boutons(8)
-        'init(8, 8, 10, 8)
+        Me.TextBoxLimiteTemps.Text = "60"
     End Sub
 
-    Private Sub RadioMoyen_CheckedChanged(sender As Object, e As EventArgs) Handles RadioMoyen.CheckedChanged
+    Private Sub radiomoyen_checkedchanged(sender As Object, e As EventArgs) Handles RadioMoyen.CheckedChanged
         FormJeu.Placer_boutons(10)
+        Me.TextBoxLimiteTemps.Text = "60"
     End Sub
 
-    Private Sub RadioButtonDifficile_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButtonDifficile.CheckedChanged
+    Private Sub radiobuttondifficile_checkedchanged(sender As Object, e As EventArgs) Handles RadioButtonDifficile.CheckedChanged
         FormJeu.Placer_boutons(16)
+        Me.TextBoxLimiteTemps.Text = "60"
     End Sub
 
     Private Sub FormOption_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -65,7 +73,6 @@
     Private Sub ButtonChoisirFichier_Click(sender As Object, e As EventArgs) Handles ButtonChoisirFichier.Click
         ModuleEnregistrementJoueurs.Choisir_fichier()
         lectureFichier(Me.TextBoxCheminFichier.Text)
-        'lectureBinaire(".\fichier")
     End Sub
 
     Private Sub TextBoxLimiteTemps_TextChanged(sender As Object, e As EventArgs) Handles TextBoxLimiteTemps.TextChanged

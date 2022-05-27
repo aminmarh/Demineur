@@ -2,7 +2,6 @@
 
 Module ModuleEnregistrementJoueurs
     Public Sub lectureFichier(fichier As String)
-
         Dim monStreamReader As StreamReader = New StreamReader(fichier)
         Dim ligne As String = "test"
         While ligne <> ""
@@ -32,6 +31,9 @@ Module ModuleEnregistrementJoueurs
         End If
     End Sub
 
+
+    'Nous avons essayé d'utiliser le fichier binaire pour crypter les données sensibles
+    'afin qu'une personne mal intentionnée ne puisse pas y toucher mais nous n'avons pas réussi
     Sub ecritureBinaire(ByVal NomFichier As String)
         Dim br As BinaryReader
         Dim bw As BinaryWriter

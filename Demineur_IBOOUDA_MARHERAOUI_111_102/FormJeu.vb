@@ -43,7 +43,6 @@
             For j As Integer = 1 To taille * 33 Step 33
                 Dim cases As Button = New Button()
                 cases.Size = New Size(40, 33)
-                'cases = New Button
                 cases.Location = New Point(i, j)
                 PanelJeu.Controls.Add(cases)
             Next
@@ -59,6 +58,4 @@
             Timer1.Stop()
         End If
     End Sub
-
-
 End Class
